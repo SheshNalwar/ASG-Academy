@@ -1,0 +1,42 @@
+nav {
+  min-width: 100%;
+  height: 5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  .navbar {
+    width: 100%;
+    height: 3.5rem;
+    background-color: #fdfefe;
+    backdrop-filter: blur(10px);
+    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
+      rgba(120, 124, 132, 0.19);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      gap: 2rem;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      .lines {
+        height: 5px;
+        width: 2rem;
+        background-color: #515151;
+        border-radius: 2px;
+      }
+    }
+  }
+}
