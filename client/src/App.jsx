@@ -5,18 +5,22 @@ import {
   AboutUsPage,
   Achievements,
   GalleryPage,
+  NavBar,
 } from "./Index";
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/courses" element={<CoursesPage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="/achievements" element={<Achievements />} />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/achievements" element={<Achievements />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
