@@ -20,22 +20,30 @@ nav {
     ul {
       display: flex;
       width: 100%;
-      justify-content: space-evenly;
-      gap: 2rem;
-      a {
-        text-decoration: none;
-        color: black;
+      justify-content: space-around;
+      align-items: center;
+      .logo {
+        cursor: pointer;
       }
-    }
-    .hamburger {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-      .lines {
-        height: 5px;
-        width: 2rem;
-        background-color: #515151;
-        border-radius: 2px;
+      .navlinks {
+        display: flex;
+        gap: 2rem;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .hamburgerMenu {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        .lines {
+          height: 4px;
+          width: 2rem;
+          background-color: #363636;
+          border-radius: 2px;
+          display: none;
+        }
       }
     }
   }

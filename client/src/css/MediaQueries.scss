@@ -1,0 +1,19 @@
+@media screen and (width<600px) {
+  nav {
+    .navbar {
+      ul {
+        justify-content: space-between;
+        padding: 0 1rem;
+        .navlinks {
+          display: none;
+        }
+        .hamburgerMenu {
+          display: flex;
+          .lines {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
