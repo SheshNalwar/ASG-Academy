@@ -1,4 +1,4 @@
-import "../css/App.scss";
+import "../css/Components.scss";
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
@@ -6,6 +6,7 @@ const NavBar = () => {
       <div className="navbar">
         <ul>
           <div className="logo">
+            <img src="Logocopy.png" />
             <p>ASG Academy</p>
           </div>
           <div className="navlinks">

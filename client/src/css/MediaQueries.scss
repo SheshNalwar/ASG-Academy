@@ -2,7 +2,6 @@
   nav {
     .navbar {
       ul {
-        justify-content: space-between;
         padding: 0 1rem;
         .navlinks {
           display: none;
@@ -15,5 +14,8 @@
         }
       }
     }
+  }
+  .coursePage{
+    flex-direction: column;
   }
 }

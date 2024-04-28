@@ -1,0 +1,83 @@
+nav {
+  min-width: 100%;
+  height: 5rem;
+  padding: 1rem;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  .navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #fdfefe9a;
+    backdrop-filter: blur(8px);
+    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
+      rgba(120, 124, 132, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 3.5rem;
+      align-items: center;
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+        p {
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+      }
+      .navlinks {
+        display: flex;
+        gap: 2rem;
+        a {
+          text-decoration: none;
+          font-size: 1.1rem;
+          font-weight: 500;
+          color: black;
+        }
+      }
+      .hamburgerMenu {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        .lines {
+          height: 4px;
+          width: 2rem;
+          background-color: #363636;
+          border-radius: 2px;
+          display: none;
+        }
+      }
+    }
+  }
+}
+.coursecard {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 25px;
+  overflow: hidden;
+
+  background-color: #363636;
+  .image {
+    padding: 1rem;
+    img {
+      border-radius: 15px;
+      width: 13rem;
+      height: 10rem;
+    }
+  }
+}

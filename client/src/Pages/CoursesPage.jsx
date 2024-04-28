@@ -1,8 +1,12 @@
+import CoursesCard from "../components/CoursesCard";
+import "../css/App.scss";
 const CoursesPage = () => {
   return (
-    <>
-      <p>Courses Page</p>
-    </>
+    <div className="coursePage">
+      <CoursesCard imagesrc="abacus.jpg"/>
+      <CoursesCard/>
+      <CoursesCard/>
+    </div>
   );
 };
 
