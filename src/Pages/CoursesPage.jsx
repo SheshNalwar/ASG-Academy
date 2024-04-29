@@ -1,20 +1,52 @@
 import CoursesCard from "../components/CoursesCard";
-import SampleCard from "../components/SampleCard";
 import "../css/App.scss";
 const CoursesPage = () => {
+  const courses = [
+    {
+      id: "1",
+      imgsrc: "abacus.jpeg",
+      title: "Abacus ",
+      description:
+        "Unlock the ancient art of mental arithmetic with our Abacus Techniques Mastery course.",
+      duration: "6 weeks",
+    },
+    {
+      id: "2",
+      imgsrc: "handwriting.jpeg",
+      title: "Handwriting Improvement",
+      description:
+        "Enhance your handwriting skills and Handwriting Improvement ",
+      duration: "8 weeks",
+    },
+    {
+      id: "3",
+      imgsrc: "maths.jpeg",
+      title: "Vedic Maths Fundamentals",
+      description:
+        "Improve your mathematical skills with our Vedic Maths Fundamentals course.",
+      duration: "10 weeks",
+    },
+    {
+      id: "4",
+      imgsrc: "phonics.jpeg",
+      title: "Phonics for Beginners",
+      description:
+        "Lay a strong foundation for reading and literacy with our Phonics for Beginners course.",
+      duration: "12 weeks",
+    },
+  ];
+
   return (
     <div className="coursePage">
-      {/* <CoursesCard imagesrc="abacus.jpeg" title="Abacus"/> */}
-      <CoursesCard imagesrc="phonics.jpeg" title="Abacus"/>
-      <CoursesCard imagesrc="handwriting.jpeg" title="Abacus"/>
-      <CoursesCard imagesrc="maths.jpeg" title="Vedic Maths"/>
-      {/* <SampleCard
-        title="Abacus"
-        description="Unlock the ancient art of mental arithmetic with our Abacus Techniques Mastery course."
-        imageUrl="abacus.jpeg"
-        duration="6 weeks"
-        enrollmentLink="enroll/abacus"
-      /> */}
+      {courses.map((course) => (
+        <CoursesCard
+          key={course.id}
+          imagesrc={course.imgsrc}
+          title={course.title}
+          duration={course.duration}
+          description={course.description}
+        />
+      ))}
     </div>
   );
 };

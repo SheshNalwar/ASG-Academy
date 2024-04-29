@@ -47,8 +47,31 @@ nav {
           font-size: 1.1rem;
           font-weight: 500;
           color: black;
+          position: relative;
+        }
+        a::after {
+          content: "";
+          width: 100%;
+          transform: scale(0, 1);
+          position: absolute;
+          height: 2px;
+          border-radius: 1px;
+          background-color: #007bff;
+          left: 0;
+          bottom: 0;
+          transition: transform 0.3s ease;
+        }
+        a:hover::after {
+          transform: scale(1, 1);
+        }
+        .active {
+          color: #007bff;
+        }
+        .active::after {
+          display: none;
         }
       }
+
       .hamburgerMenu {
         display: none;
         flex-direction: column;
@@ -65,25 +88,63 @@ nav {
     }
   }
 }
+
 .coursecard {
-  width: 17rem;
-  height: 25rem;
+  width: clamp(18rem, 14rem, 15rem);
+  height: fit-content;
   border-radius: 15px;
   overflow: hidden;
   background-color: #fdfefed2;
+  padding-bottom: 1rem ;
   box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
-      rgba(120, 124, 132, 0.25);
+    rgba(120, 124, 132, 0.25);
   .image {
     padding: 1rem;
     width: 100%;
-    // border:2px solid red;
     img {
       border-radius: 10px;
-      min-width: 15rem;
+      width: clamp(16rem, 14rem, 15rem);
       height: 10rem;
     }
   }
-  .courseDetails{
+  .courseDetails {
     padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .courseDescription {
+      font-size: clamp(0.8rem, 0.9rem, 1rem);
+      height: 3.8rem;
+      width: 90%;
+    }
+    .courseDuration {
+      font-weight: bold;
+    }
+    .readMore {
+      width: 90%;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: 1.5px solid black;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+      }
+    }
+
+    .enroll-button {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
   }
 }

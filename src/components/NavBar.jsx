@@ -10,11 +10,21 @@ const NavBar = () => {
             <p>ASG Academy</p>
           </div>
           <div className="navlinks">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/gallery">Gallery</NavLink>
-            <NavLink to="/achievements">Achievements</NavLink>
-            <NavLink to="/courses">Courses</NavLink>
-            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/" activeclassname="active">
+              Home
+            </NavLink>
+            <NavLink to="/gallery" activeclassname="active">
+              Gallery
+            </NavLink>
+            <NavLink to="/achievements" activeclassname="active">
+              Achievements
+            </NavLink>
+            <NavLink to="/courses" activeclassname="active">
+              Courses
+            </NavLink>
+            <NavLink to="/about" activeclassname="active">
+              About Us
+            </NavLink>
           </div>
           <div className="hamburgerMenu">
             <div className="lines"></div>
