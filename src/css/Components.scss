@@ -66,18 +66,24 @@ nav {
   }
 }
 .coursecard {
-  width: 15rem;
-  height: 20rem;
-  border-radius: 25px;
+  width: 17rem;
+  height: 25rem;
+  border-radius: 15px;
   overflow: hidden;
-
-  background-color: #363636;
+  background-color: #fdfefed2;
+  box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
+      rgba(120, 124, 132, 0.25);
   .image {
     padding: 1rem;
+    width: 100%;
+    // border:2px solid red;
     img {
-      border-radius: 15px;
-      width: 13rem;
+      border-radius: 10px;
+      min-width: 15rem;
       height: 10rem;
     }
+  }
+  .courseDetails{
+    padding-left: 1rem;
   }
 }
