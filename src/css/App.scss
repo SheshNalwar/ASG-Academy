@@ -22,14 +22,15 @@
   .galleryTitle {
     text-align: center;
     font-size: 3vw;
-    background-color: red;
-
+    background-color: blue;
   }
 
   .galleryContainer {
     display: flex;
     flex-wrap: wrap;
     padding: 3rem;
+
+    padding: 3vw;
 
     .galleryImage {
       height: 50vh;
