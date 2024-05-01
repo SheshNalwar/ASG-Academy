@@ -1,3 +1,7 @@
+:root {
+  --accent: #007bff;
+}
+
 nav {
   min-width: 100%;
   height: 5rem;
@@ -63,7 +67,7 @@ nav {
           position: absolute;
           height: 2px;
           border-radius: 1px;
-          background-color: #007bff;
+          background-color: var(--accent);
           left: 0;
           bottom: 0;
           transition: transform 0.3s ease;
@@ -74,7 +78,7 @@ nav {
         }
 
         .active {
-          color: #007bff;
+          color: var(--accent);
         }
 
         .active::after {
@@ -84,24 +88,91 @@ nav {
 
       .hamburgerMenu {
         display: none;
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        align-items: flex-end;
         flex-direction: column;
         gap: 4px;
+        width: 2rem;
+
         cursor: pointer;
 
         .lines {
           height: 4px;
-          width: 2rem;
           background-color: #363636;
           border-radius: 2px;
           display: none;
+          transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+
+        .lines:nth-child(1) {
+          width: 50%;
+        }
+
+        .lines:nth-child(2) {
+          width: 100%;
+        }
+
+        .lines:nth-child(3) {
+          width: 75%;
+        }
+
+        &.active {
+          #line1 {
+            transform: translate(-12px, 2px) rotatez(45deg);
+          }
+
+          #line2 {
+            transform-origin: top;
+            transform: rotatez(-45deg);
+          }
+
+          #line3 {
+            width: 50%;
+            transform: translate(-1px, -3px) rotatez(45deg);
+          }
         }
       }
     }
   }
+
+  .menuPage {
+    border-radius: 10px;
+    padding: 1rem 0;
+    width: 50%;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease;
+    background-color: #fdfefed2;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .active {
+        color: var(--accent);
+      }
+    }
+  }
+
+  .open {
+    transform: translateY(0%);
+  }
 }
 
 .coursecard {
-  width: clamp(18rem, 14rem, 15rem);
+  width: clamp(18rem, 14rem, 20rem);
   height: fit-content;
   border-radius: 15px;
   overflow: hidden;
@@ -115,7 +186,7 @@ nav {
 
     img {
       border-radius: 10px;
-      width: clamp(16rem, 14rem, 15rem);
+      width: clamp(16rem, 14rem, 18rem);
       height: 10rem;
     }
   }
@@ -127,7 +198,7 @@ nav {
     gap: 10px;
 
     .courseDescription {
-      font-size: clamp(0.8rem, 0.9rem, 1rem);
+      font-size: clamp(0.9rem, 0.7rem, 0.8rem);
       height: 3.8rem;
       width: 90%;
     }
@@ -136,7 +207,7 @@ nav {
       font-weight: bold;
     }
 
-    .readMore {
+    .viewMore {
       width: 90%;
       height: 3rem;
       display: flex;
@@ -151,35 +222,5 @@ nav {
         font-size: 1.1rem;
       }
     }
-
-    .enroll-button {
-      cursor: pointer;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      border: none;
-      transition: background-color 0.3s ease;
-    }
-  }
-}
-
-.galleryImage {
-  height: 50vh;
-  width: 40vw;
-  margin: 3vw;
-
-  .imgTitle {
-    text-align: center;
-    font-weight: 500;
-  }
-
-  .image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
   }
 }

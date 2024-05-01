@@ -10,9 +10,9 @@ const CoursesCard = ({ imagesrc, title, description, duration }) => {
         <h3>{title}</h3>
         <p className="courseDescription">{description}</p>
         <p className="courseDuration">Duration: {duration}</p>
-        <div className="readMore">
+        <div className="viewMore">
           <NavLink to="">
-            <span className="arrow">Read More -&gt;</span>
+            <span className="arrow">View More -&gt;</span>
           </NavLink>
         </div>
       </div>

@@ -8,15 +8,15 @@ const CoursesPage = () => {
       title: "Abacus ",
       description:
         "Unlock the ancient art of mental arithmetic with our Abacus Techniques Mastery course.",
-      duration: "6 weeks",
+      duration: "2 to 3 Months",
     },
     {
       id: "2",
       imgsrc: "handwriting.jpeg",
       title: "Handwriting Improvement",
       description:
-        "Enhance your handwriting skills and Handwriting Improvement ",
-      duration: "8 weeks",
+        "Enhance your handwriting skills and develop beautiful penmanship with our Handwriting Improvement course.",
+      duration: "25 Classes",
     },
     {
       id: "3",
