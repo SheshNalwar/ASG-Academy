@@ -22,19 +22,19 @@
   .galleryTitle {
     text-align: center;
     font-size: 3vw;
-    background-color: blue;
+    background-color: red;
 
   }
 
   .galleryContainer {
-
     display: flex;
     flex-wrap: wrap;
-    padding: 3vw;
+    padding: 3rem;
 
     .galleryImage {
       height: 50vh;
       width: 40vw;
+      margin: 6vh;
 
       .imgTitle {
         text-align: center;
@@ -50,7 +50,4 @@
       }
     }
   }
-
-
-
 }
