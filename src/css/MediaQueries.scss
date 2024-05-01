@@ -3,11 +3,14 @@
     .navbar {
       ul {
         padding: 0 1rem;
+
         .navlinks {
           display: none;
         }
+
         .hamburgerMenu {
           display: flex;
+
           .lines {
             display: block;
           }
@@ -15,7 +18,43 @@
       }
     }
   }
+
   .coursePage {
     flex-direction: column;
+  }
+
+  .galleryPage {
+
+    .galleryTitle {
+      font-size: 2rem;
+      font-weight: 500;
+      padding: 5vw;
+    }
+
+    .galleryContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 0 3rem;
+
+      .galleryImage {
+
+        height: 100%;
+        width: 100%;
+        margin: 0;
+
+        .imgTitle {
+          font-size: 6vw;
+          margin-top: 2rem;
+        }
+
+        .image {
+          height: 100%;
+          width: 100%;
+        }
+
+
+      }
+    }
+
   }
 }
