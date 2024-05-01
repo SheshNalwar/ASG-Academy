@@ -7,41 +7,47 @@ nav {
   justify-content: center;
   align-items: center;
   z-index: 99;
+
   .navbar {
     width: 100%;
     height: 4rem;
     background-color: #fdfefe9a;
     backdrop-filter: blur(8px);
-    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
-      rgba(120, 124, 132, 0.25);
+    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     ul {
       display: flex;
       width: 100%;
       justify-content: space-between;
       padding: 0 3.5rem;
       align-items: center;
+
       .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
         cursor: pointer;
+
         img {
           width: 2.5rem;
           height: 2.5rem;
         }
+
         p {
           font-weight: 500;
           font-size: 1.2rem;
         }
       }
+
       .navlinks {
         display: flex;
         gap: 2rem;
+
         a {
           text-decoration: none;
           font-size: 1.1rem;
@@ -49,6 +55,7 @@ nav {
           color: black;
           position: relative;
         }
+
         a::after {
           content: "";
           width: 100%;
@@ -61,12 +68,15 @@ nav {
           bottom: 0;
           transition: transform 0.3s ease;
         }
+
         a:hover::after {
           transform: scale(1, 1);
         }
+
         .active {
           color: #007bff;
         }
+
         .active::after {
           display: none;
         }
@@ -77,6 +87,7 @@ nav {
         flex-direction: column;
         gap: 4px;
         cursor: pointer;
+
         .lines {
           height: 4px;
           width: 2rem;
@@ -95,31 +106,36 @@ nav {
   border-radius: 15px;
   overflow: hidden;
   background-color: #fdfefed2;
-  padding-bottom: 1rem ;
-  box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
-    rgba(120, 124, 132, 0.25);
+  padding-bottom: 1rem;
+  box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
+
   .image {
     padding: 1rem;
     width: 100%;
+
     img {
       border-radius: 10px;
       width: clamp(16rem, 14rem, 15rem);
       height: 10rem;
     }
   }
+
   .courseDetails {
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     .courseDescription {
       font-size: clamp(0.8rem, 0.9rem, 1rem);
       height: 3.8rem;
       width: 90%;
     }
+
     .courseDuration {
       font-weight: bold;
     }
+
     .readMore {
       width: 90%;
       height: 3rem;
@@ -128,6 +144,7 @@ nav {
       align-items: center;
       border-radius: 5px;
       border: 1.5px solid black;
+
       a {
         text-decoration: none;
         color: black;
@@ -146,5 +163,23 @@ nav {
       border: none;
       transition: background-color 0.3s ease;
     }
+  }
+}
+
+.galleryImage {
+  height: 50vh;
+  width: 40vw;
+  margin: 3vw;
+
+  .imgTitle {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
 }
