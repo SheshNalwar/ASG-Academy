@@ -17,7 +17,8 @@ nav {
     height: 4rem;
     background-color: #fdfefe9a;
     backdrop-filter: blur(8px);
-    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
+    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
+      rgba(120, 124, 132, 0.25);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -178,7 +179,8 @@ nav {
   overflow: hidden;
   background-color: #fdfefed2;
   padding-bottom: 1rem;
-  box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
+  box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
+    rgba(120, 124, 132, 0.25);
 
   .image {
     padding: 1rem;
@@ -202,8 +204,8 @@ nav {
       height: 3.8rem;
       width: 90%;
     }
-
     .courseDuration {
+      font-size: clamp(1rem, 0.8rem, 0.9rem);
       font-weight: bold;
     }
 
