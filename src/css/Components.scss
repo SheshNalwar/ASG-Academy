@@ -1,3 +1,7 @@
+:root {
+  --accent: #007bff;
+}
+
 nav {
   min-width: 100%;
   height: 5rem;
@@ -7,83 +11,216 @@ nav {
   justify-content: center;
   align-items: center;
   z-index: 99;
+
   .navbar {
     width: 100%;
     height: 4rem;
     background-color: #fdfefe9a;
     backdrop-filter: blur(8px);
-    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
-      rgba(120, 124, 132, 0.25);
+    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     ul {
       display: flex;
       width: 100%;
       justify-content: space-between;
       padding: 0 3.5rem;
       align-items: center;
+
       .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
         cursor: pointer;
+
         img {
           width: 2.5rem;
           height: 2.5rem;
         }
+
         p {
           font-weight: 500;
           font-size: 1.2rem;
         }
       }
+
       .navlinks {
         display: flex;
         gap: 2rem;
+
         a {
           text-decoration: none;
           font-size: 1.1rem;
           font-weight: 500;
           color: black;
+          position: relative;
         }
-      }
-      .hamburgerMenu {
-        display: none;
-        flex-direction: column;
-        gap: 4px;
-        cursor: pointer;
-        .lines {
-          height: 4px;
-          width: 2rem;
-          background-color: #363636;
-          border-radius: 2px;
+
+        a::after {
+          content: "";
+          width: 100%;
+          transform: scale(0, 1);
+          position: absolute;
+          height: 2px;
+          border-radius: 1px;
+          background-color: var(--accent);
+          left: 0;
+          bottom: 0;
+          transition: transform 0.3s ease;
+        }
+
+        a:hover::after {
+          transform: scale(1, 1);
+        }
+
+        .active {
+          color: var(--accent);
+        }
+
+        .active::after {
           display: none;
         }
       }
+
+      .hamburgerMenu {
+        display: none;
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 4px;
+        width: 2rem;
+
+        cursor: pointer;
+
+        .lines {
+          height: 4px;
+          background-color: #363636;
+          border-radius: 2px;
+          display: none;
+          transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+
+        .lines:nth-child(1) {
+          width: 50%;
+        }
+
+        .lines:nth-child(2) {
+          width: 100%;
+        }
+
+        .lines:nth-child(3) {
+          width: 75%;
+        }
+
+        &.active {
+          #line1 {
+            transform: translate(-12px, 2px) rotatez(45deg);
+          }
+
+          #line2 {
+            transform-origin: top;
+            transform: rotatez(-45deg);
+          }
+
+          #line3 {
+            width: 50%;
+            transform: translate(-1px, -3px) rotatez(45deg);
+          }
+        }
+      }
     }
   }
+
+  .menuPage {
+    border-radius: 10px;
+    padding: 1rem 0;
+    width: 50%;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease;
+    background-color: #fdfefed2;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .active {
+        color: var(--accent);
+      }
+    }
+  }
+
+  .open {
+    transform: translateY(0%);
+  }
 }
+
 .coursecard {
-  width: 17rem;
-  height: 25rem;
+  width: clamp(18rem, 14rem, 20rem);
+  height: fit-content;
   border-radius: 15px;
   overflow: hidden;
   background-color: #fdfefed2;
-  box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
-      rgba(120, 124, 132, 0.25);
+  padding-bottom: 1rem;
+  box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
+
   .image {
     padding: 1rem;
     width: 100%;
-    // border:2px solid red;
+
     img {
       border-radius: 10px;
-      min-width: 15rem;
+      width: clamp(16rem, 14rem, 18rem);
       height: 10rem;
     }
   }
-  .courseDetails{
+
+  .courseDetails {
     padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .courseDescription {
+      font-size: clamp(0.9rem, 0.7rem, 0.8rem);
+      height: 3.8rem;
+      width: 90%;
+    }
+
+    .courseDuration {
+      font-weight: bold;
+    }
+
+    .viewMore {
+      width: 90%;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: 1.5px solid black;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+      }
+    }
   }
 }

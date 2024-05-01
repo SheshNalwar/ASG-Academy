@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.homePage {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 7rem;
+}
