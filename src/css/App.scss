@@ -18,29 +18,22 @@
 
 .galleryPage {
   padding-top: 7rem;
-
   .galleryTitle {
     text-align: center;
     font-size: 3vw;
     background-color: blue;
-
   }
-
   .galleryContainer {
-
     display: flex;
     flex-wrap: wrap;
     padding: 3vw;
-
     .galleryImage {
       height: 50vh;
       width: 40vw;
-
       .imgTitle {
         text-align: center;
         font-weight: 500;
       }
-
       .image {
         height: 100%;
         width: 100%;
@@ -50,7 +43,4 @@
       }
     }
   }
-
-
-
 }
