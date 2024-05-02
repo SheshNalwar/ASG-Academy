@@ -7,9 +7,11 @@ import HomePage from "./Pages/HomePage";
 
 // Components :
 import NavBar from "./components/NavBar";
+import CourseSection from "./components/CourseSection";
+import CoursesCard from "./components/CoursesCard";
 
 // Export Components  :
-export { NavBar };
+export { NavBar, CourseSection, CoursesCard };
 
 // Export Pages  :
 export { AboutUsPage, Achievements, CoursesPage, GalleryPage, HomePage };

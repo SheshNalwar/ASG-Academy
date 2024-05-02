@@ -173,7 +173,7 @@ nav {
 }
 
 .coursecard {
-  width: clamp(18rem, 14rem, 20rem);
+  max-width: 18rem;
   height: fit-content;
   border-radius: 15px;
   overflow: hidden;
@@ -181,34 +181,30 @@ nav {
   padding-bottom: 1rem;
   box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
     rgba(120, 124, 132, 0.25);
-
   .image {
     padding: 1rem;
     width: 100%;
-
     img {
       border-radius: 10px;
-      width: clamp(16rem, 14rem, 18rem);
+      min-width: 16rem;
       height: 10rem;
     }
   }
-
   .courseDetails {
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
-
     .courseDescription {
       font-size: clamp(0.9rem, 0.7rem, 0.8rem);
-      height: 3.8rem;
+      height: 2.4rem;
+      font-weight: 400;
       width: 90%;
     }
     .courseDuration {
       font-size: clamp(1rem, 0.8rem, 0.9rem);
-      font-weight: bold;
+      font-weight: 500;
     }
-
     .viewMore {
       width: 90%;
       height: 3rem;
@@ -217,11 +213,52 @@ nav {
       align-items: center;
       border-radius: 5px;
       border: 1.5px solid black;
+      cursor: pointer;
+    }
+  }
+}
 
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.1rem;
+.courseSection {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(138, 138, 138);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 7rem;
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .detail {
+    margin-bottom: 15px;
+
+    h3 {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 3px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style-type: none;
+      color: #666;
+      margin-bottom: 5px;
+
+      li {
+        margin-bottom: 5px;
       }
     }
   }

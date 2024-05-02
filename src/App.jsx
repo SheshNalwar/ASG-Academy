@@ -6,7 +6,7 @@ import {
   Achievements,
   GalleryPage,
   NavBar,
-} from "./Index";
+} from "./Index.js";
 function App() {
   return (
     <>

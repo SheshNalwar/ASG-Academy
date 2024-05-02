@@ -1,6 +1,11 @@
-import { NavLink } from "react-router-dom";
 import "../css/Components.scss";
-const CoursesCard = ({ imagesrc, title, description, duration }) => {
+const CoursesCard = ({ imagesrc, title, description, duration, targetId }) => {
+  const scrollToCourse = () => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="coursecard">
       <div className="image">
@@ -10,10 +15,8 @@ const CoursesCard = ({ imagesrc, title, description, duration }) => {
         <h3>{title}</h3>
         <p className="courseDescription">{description}</p>
         <p className="courseDuration">Duration: {duration}</p>
-        <div className="viewMore">
-          <NavLink to="">
-            <span className="arrow">View More -&gt;</span>
-          </NavLink>
+        <div className="viewMore" onClick={scrollToCourse}>
+          <span className="arrow">View More -&gt;</span>
         </div>
       </div>
     </div>

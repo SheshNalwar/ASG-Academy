@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { client } from '../schema.js';
+import { client } from '../utils/schema.js';
 import "../css/App.scss"
 const GalleryPage = () => {
   const [data, setData] = useState([]);
