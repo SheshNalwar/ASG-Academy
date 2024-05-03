@@ -1,0 +1,44 @@
+.galleryPage {
+    padding-top: 7rem;
+    // width: 98vw;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #E3F2FD 0%, #90CAF9 100%);
+
+    .galleryTitle {
+        margin-top: 10vh;
+        text-align: center;
+        font-size: 4vw;
+        color: black;
+        height: 20vh;
+        width: 100%;
+    }
+
+    .galleryContainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem;
+        // margin-top: 40vh;
+
+        .galleryImage {
+            height: 50vh;
+            width: 40vw;
+            margin: 6vh;
+            border-radius: 10px;
+
+            .imgTitle {
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .image {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                margin-top: 2vh;
+                box-shadow: 5px 5px 30px #00000062;
+
+            }
+        }
+    }
+}
