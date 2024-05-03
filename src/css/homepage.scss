@@ -3,10 +3,10 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "popins", sans-serif;
- overflow-x:hidden ;
+  //  overflow-x:hidden ;
 }
 
-.bgDiv{
+.bgDiv {
   height: 150vh;
   width: 200vw;
   position: absolute;
@@ -28,6 +28,7 @@
   height: 200px;
   border-radius: 360px;
 }
+
 .Homepage-2-child {
   position: absolute;
   top: 344px;
@@ -36,6 +37,7 @@
   height: 200px;
   border-radius: 360px;
 }
+
 .Homepage-3-child {
   position: absolute;
   top: 500px;
@@ -44,6 +46,7 @@
   height: 200px;
   border-radius: 360px;
 }
+
 .Homepage-4-child {
   position: absolute;
   top: 650px;
@@ -52,6 +55,7 @@
   height: 200px;
   border-radius: 360px;
 }
+
 .Homepage-1-item {
   top: 650px;
   left: 950px;
@@ -62,6 +66,7 @@
   width: 500px;
   height: 60px;
 }
+
 .search-icon {
   position: absolute;
   top: 658px;
@@ -70,6 +75,7 @@
   height: 47px;
   object-fit: cover;
 }
+
 .Homepage-1 {
   width: 100%;
   position: relative;
@@ -77,21 +83,26 @@
   height: 1024px;
   overflow: hidden;
 }
+
 .Home-content {
   padding-top: 18%;
   padding-left: 55%;
   padding-bottom: 5%;
 }
+
 #text1 {
   font-size: 40px;
 }
+
 #heading {
   font-size: 80px;
   color: #42a5f5;
 }
+
 p {
   font-size: 24px;
 }
+
 .circle-1-child {
   position: absolute;
 
@@ -103,6 +114,7 @@ p {
   border: 5px solid #2196f3;
   height: 80px;
 }
+
 .circle-2-child {
   position: absolute;
 
@@ -114,6 +126,7 @@ p {
   border: 10px solid #815cb1;
   height: 40px;
 }
+
 .circle-3-child {
   position: absolute;
   top: 600px;
@@ -124,6 +137,7 @@ p {
   border: 10px solid #16423f;
   height: 30px;
 }
+
 .circle-4-child {
   position: absolute;
 
@@ -135,78 +149,79 @@ p {
   border: 5px solid #b6343c;
   height: 40px;
 }
+
 .faculty {
   margin-top: 50vh;
   font-size: 3vw;
   color: #42a5f5;
 
-  #title{
+  #title {
     text-align: center;
   }
 
-.facultyDetails {
-  height: auto;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5vw;
-  margin-top: 5vh;
-  .coursecard {
-    width: clamp(18rem, 14rem, 20rem);
-    height: fit-content;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: #fdfefed2;
-    padding-bottom: 1rem;
-    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px
-      rgba(120, 124, 132, 0.25);
+  .facultyDetails {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 5vh;
 
-    .image {
-      padding: 1rem;
-      width: 100%;
+    .coursecard {
+      width: clamp(18rem, 14rem, 20rem);
+      height: fit-content;
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: #fdfefed2;
+      padding-bottom: 1rem;
+      box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
 
-      img {
-        border-radius: 10px;
-        width: clamp(16rem, 14rem, 18rem);
-        height: 10rem;
-      }
-    }
+      .image {
+        padding: 1rem;
+        width: 100%;
 
-    .courseDetails {
-      padding-left: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-
-      .courseDescription {
-        font-size: clamp(0.9rem, 0.7rem, 0.8rem);
-        height: 3.8rem;
-        width: 90%;
+        img {
+          border-radius: 10px;
+          width: clamp(16rem, 14rem, 18rem);
+          height: 10rem;
+        }
       }
 
-      .courseDuration {
-        font-weight: bold;
-      }
-
-      .viewMore {
-        width: 90%;
-        height: 3rem;
+      .courseDetails {
+        padding-left: 1rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        border: 1.5px solid black;
+        flex-direction: column;
+        gap: 10px;
 
-        a {
-          text-decoration: none;
-          color: black;
-          font-size: 1.1rem;
+        .courseDescription {
+          font-size: clamp(0.9rem, 0.7rem, 0.8rem);
+          height: 3.8rem;
+          width: 90%;
+        }
+
+        .courseDuration {
+          font-weight: bold;
+        }
+
+        .viewMore {
+          width: 90%;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          border: 1.5px solid black;
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+          }
         }
       }
     }
   }
-}
 
 }
 
@@ -222,7 +237,8 @@ p {
   width: 572px;
   height: 337px;
 }
-.Experience-child2{
+
+.Experience-child2 {
   position: absolute;
   top: 460px;
   left: 180px;
@@ -231,7 +247,8 @@ p {
   width: 610px;
   height: 355px;
 }
-.Experience-child3{
+
+.Experience-child3 {
   position: absolute;
   top: 500px;
   left: 160px;
@@ -239,14 +256,16 @@ p {
   background-color: #16423f;
   width: 650px;
   height: 360px;
+
   img {
     border-radius: 10px;
-    width:650px;
-    height:360px;
+    width: 650px;
+    height: 360px;
     overflow-y: hidden;
     overflow-x: hidden;
   }
 }
+
 /*.bgDiv2{
   height: 150vh;
   width: 200vw;
@@ -265,24 +284,29 @@ p {
   overflow: hidden;
   top: 180%;
 }
+
 .experience-content {
   padding-top: 25%;
   padding-left: 55%;
   padding-bottom: 1%;
   left: 50px;
 }
+
 #text2 {
   font-size: 40px;
 }
+
 #heading {
   font-size: 80px;
   color: #42a5f5;
 }
+
 p {
   font-size: 35px;
   color: #16423f;
 }
-.about-us{
+
+.about-us {
   padding-top: 25%;
   padding-left: 55%;
   padding-bottom: 1%;
@@ -291,13 +315,15 @@ p {
   width: 10vw;
   border-radius: 20px;
 }
-.circle-experience-child{
+
+.circle-experience-child {
   height: 15vh;
   width: 10vw;
   border-radius: 50%;
   background: #000;
 }
-.child1-service{
+
+.child1-service {
   position: absolute;
   top: 315%;
   left: 40%;
@@ -307,7 +333,8 @@ p {
   height: 350px;
 
 }
-.child2-service{
+
+.child2-service {
   position: absolute;
   top: 320%;
   left: 65%;
@@ -316,7 +343,8 @@ p {
   width: 350px;
   height: 350px;
 }
-.child3-service{
+
+.child3-service {
   position: absolute;
   top: 365%;
   left: 40%;
@@ -325,7 +353,8 @@ p {
   width: 350px;
   height: 350px;
 }
-.child4-service{
+
+.child4-service {
   position: absolute;
   top: 370%;
   left: 65%;
@@ -334,4 +363,3 @@ p {
   width: 350px;
   height: 350px;
 }
-
