@@ -1,9 +1,17 @@
 import "../css/Components.scss";
-const CoursesCard = ({ imagesrc, title, description, duration, targetId }) => {
+const CoursesCard = ({
+  imagesrc,
+  title,
+  description,
+  duration,
+  targetId,
+}) => {
   const scrollToCourse = () => {
+    const gap = 80;
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
+      const offsetTop = targetElement.offsetTop - gap;
+      window.scrollTo({ top: offsetTop, behavior: "smooth" });
     }
   };
   return (
