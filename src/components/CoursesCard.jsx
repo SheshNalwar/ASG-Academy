@@ -6,7 +6,7 @@ const CoursesCard = ({
   duration,
   targetId,
   ageGroup,
-  levels
+  levels,
 }) => {
   const scrollToCourse = () => {
     const gap = 80;
@@ -26,9 +26,14 @@ const CoursesCard = ({
         <p className="ageGroup">Age Group : {ageGroup}</p>
         {/* <p className="courseDescription">{description}</p> */}
         <p className="levels">Total Levels : {levels}</p>
-        <p className="courseDuration">Duration: {duration}</p>
-        <div className="viewMore" onClick={scrollToCourse}>
-          <span className="arrow">View More -&gt;</span>
+        <div className="duration">
+          <img src="duration.png" alt="" />
+          <p className="courseDuration">{duration}</p>
+        </div>
+        <div className="viewMoreDiv">
+          <button className="viewMoreBtn" onClick={scrollToCourse}>
+            View More -&gt;
+          </button>
         </div>
       </div>
     </div>

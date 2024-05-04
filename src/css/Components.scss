@@ -182,26 +182,49 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    .ageGroup{
+    .ageGroup {
       font-size: 1rem;
       color: #333333;
     }
-    .levels{
+    .levels {
       font-size: 1rem;
       color: #333333;
     }
-    .courseDescription {
-      font-size: clamp(0.9rem, 0.7rem, 0.8rem);
-      height: 2.4rem;
-      font-weight: 400;
-      width: 90%;
+    .duration {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 2px;
+      img {
+        height: 1rem;
+        width: 1rem;
+      }
+      .courseDuration {
+        font-size: clamp(1rem, 0.8rem, 0.9rem);
+        color: black;
+      }
     }
-
-    .courseDuration {
-      font-size: clamp(1rem, 0.8rem, 0.9rem);
-      font-weight: 500;
-      color: black;
+    .viewMoreDiv{
+      padding-right: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      .viewMoreBtn{
+        cursor: pointer;
+        border:none;
+        outline: none;
+        width: 6.5rem;
+        border-radius: 10px;
+        color: #007bff;
+        background-color: transparent;
+        padding: .6rem 0;
+      }
     }
+    // .courseDescription {
+    //   font-size: clamp(0.9rem, 0.7rem, 0.8rem);
+    //   height: 2.4rem;
+    //   font-weight: 400;
+    //   width: 90%;
+    // }
   }
 }
 
@@ -211,8 +234,6 @@ nav {
   height: 100%;
   box-shadow: 0 2px 4px rgb(138, 138, 138);
   padding: 1rem;
-  // border:2px solid red;
-  margin-bottom: 1rem;
   h2 {
     font-size: 1.8rem;
     color: #333333;

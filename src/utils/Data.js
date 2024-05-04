@@ -61,7 +61,7 @@ const courses = [
     description:
       "Master mental arithmetic with our Abacus Techniques Mastery course.",
     duration: "2 to 3 months",
-    targetId: "phonics",
+    targetId: "abacus-hand",
   },
 ];
 const coursesData = [
