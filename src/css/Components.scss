@@ -12,47 +12,40 @@ nav {
   align-items: center;
   z-index: 99;
   overflow-y: hidden;
-
   .navbar {
     width: 100%;
     height: 4rem;
     background-color: #fdfefe9a;
     backdrop-filter: blur(8px);
-    box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
+    box-shadow: -9.9px 11.04px 59.75px 0px rgba(206, 195, 195, 0.25);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     ul {
       display: flex;
       width: 100%;
       justify-content: space-between;
       padding: 0 3.5rem;
       align-items: center;
-
       .logo {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
         cursor: pointer;
-
         img {
           width: 2.5rem;
           height: 2.5rem;
         }
-
         p {
           font-weight: 500;
           font-size: 1.2rem;
         }
       }
-
       .navlinks {
         display: flex;
         gap: 2rem;
-
         a {
           text-decoration: none;
           font-size: 1.1rem;
@@ -60,7 +53,6 @@ nav {
           color: black;
           position: relative;
         }
-
         a::after {
           content: "";
           width: 100%;
@@ -73,20 +65,16 @@ nav {
           bottom: 0;
           transition: transform 0.3s ease;
         }
-
         a:hover::after {
           transform: scale(1, 1);
         }
-
         .active {
           color: var(--accent);
         }
-
         .active::after {
           display: none;
         }
       }
-
       .hamburgerMenu {
         display: none;
         display: flex;
@@ -96,9 +84,7 @@ nav {
         flex-direction: column;
         gap: 4px;
         width: 2rem;
-
         cursor: pointer;
-
         .lines {
           height: 4px;
           background-color: #363636;
@@ -106,29 +92,23 @@ nav {
           display: none;
           transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
         }
-
         .lines:nth-child(1) {
           width: 50%;
         }
-
         .lines:nth-child(2) {
           width: 100%;
         }
-
         .lines:nth-child(3) {
           width: 75%;
         }
-
         &.active {
           #line1 {
             transform: translate(-12px, 2px) rotatez(45deg);
           }
-
           #line2 {
             transform-origin: top;
             transform: rotatez(-45deg);
           }
-
           #line3 {
             width: 50%;
             transform: translate(-1px, -3px) rotatez(45deg);
@@ -173,14 +153,19 @@ nav {
 }
 
 .coursecard {
+  cursor: pointer;
   max-width: 18rem;
   height: fit-content;
   border-radius: 15px;
   overflow: hidden;
   background-color: #fdfefed2;
   padding-bottom: 1rem;
-  box-shadow: -9.92904281616211px 11.04298210144043px 59.75763702392578px 0px rgba(120, 124, 132, 0.25);
-
+  transition: all 0.4s;
+  box-shadow: -9.9px 11.04px 59.7px 0px rgba(0, 0, 0, 0.25);
+  &:hover {
+    box-shadow: 10px 10px 30px #00000062;
+    transform: scale(0.98);
+  }
   .image {
     padding: 1rem;
     width: 100%;
@@ -196,8 +181,15 @@ nav {
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-
+    gap: 5px;
+    .ageGroup{
+      font-size: 1rem;
+      color: #333333;
+    }
+    .levels{
+      font-size: 1rem;
+      color: #333333;
+    }
     .courseDescription {
       font-size: clamp(0.9rem, 0.7rem, 0.8rem);
       height: 2.4rem;
@@ -208,17 +200,7 @@ nav {
     .courseDuration {
       font-size: clamp(1rem, 0.8rem, 0.9rem);
       font-weight: 500;
-    }
-
-    .viewMore {
-      width: 90%;
-      height: 3rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5px;
-      border: 1.5px solid black;
-      cursor: pointer;
+      color: black;
     }
   }
 }
@@ -229,14 +211,13 @@ nav {
   height: 100%;
   box-shadow: 0 2px 4px rgb(138, 138, 138);
   padding: 1rem;
+  // border:2px solid red;
   margin-bottom: 1rem;
-  // padding-top: 7rem;
   h2 {
     font-size: 1.8rem;
-    color: #333;
+    color: #333333;
     margin-bottom: 15px;
   }
-
   p {
     color: #666;
     line-height: 1.6;

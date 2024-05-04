@@ -26,9 +26,24 @@
         min-width: 20rem;
       }
     }
+    &:hover {
+      transform: none;
+    }
   }
   .coursePage {
     flex-direction: column;
+    .mainCourse{
+      flex-direction: column;
+      img{
+        max-width: 300px;
+        max-height: 300px;  
+      }
+      .coursePageTitle{
+        .coursePageMainTitle{
+          font-size: 4rem;
+        }
+      }
+    }
   }
   .galleryPage {
     .galleryTitle {

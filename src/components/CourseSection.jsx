@@ -17,10 +17,6 @@ const CourseSection = ({ course }) => {
           <h3>Duration</h3>
           <p>{course.duration}</p>
         </div>
-        <div className="detail">
-          <h3>Schedule</h3>
-          <p>{course.schedule}</p>
-        </div>
       </div>
     </section>
   );

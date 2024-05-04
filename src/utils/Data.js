@@ -1,8 +1,10 @@
 const courses = [
   {
     id: "1",
+    levels: "Foundation + 8 Levels",
     imgsrc: "abacus.jpeg",
     title: "Abacus ",
+    ageGroup: "6 to 15 Years",
     description:
       "Master mental arithmetic with our Abacus Techniques Mastery course.",
     duration: "2 to 3 Months",
@@ -10,8 +12,10 @@ const courses = [
   },
   {
     id: "2",
+    levels: "No Levels",
     imgsrc: "handwriting.jpeg",
-    title: "Handwriting Improvement",
+    title: "Handwriting ",
+    ageGroup: "6 to 15 Years",
     description:
       "Refine your handwriting with our Handwriting Improvement course.",
     duration: "25 Classes",
@@ -19,18 +23,44 @@ const courses = [
   },
   {
     id: "3",
+    levels: "8 Levels",
+    ageGroup: "6 to 18 Years",
     imgsrc: "maths.jpeg",
-    title: "Vedic Maths Fundamentals",
+    title: "Vedic Mathematics",
     description: "Boost math skills with our Vedic Maths Fundamentals course.",
-    duration: "10 weeks",
+    duration: "2 to 3 months",
     targetId: "vedic-maths",
   },
   {
     id: "4",
+    levels: "2 Levels",
     imgsrc: "phonics.jpeg",
-    title: "Phonics for Beginners",
+    title: "Phonics",
+    ageGroup: "6 to 12 Years",
     description: "Build literacy skills with our Phonics for Beginners course.",
-    duration: "12 weeks",
+    duration: "3 months",
+    targetId: "phonics",
+  },
+  {
+    id: "5",
+    levels: "No Levels",
+    imgsrc: "grammar.jpeg",
+    title: "Grammar",
+    ageGroup: "6 to 18 Years",
+    description:
+      "Refine grammar skills with our expert-led course. Enroll now for effective communication.",
+    duration: "4 to 5 months",
+    targetId: "grammar",
+  },
+  {
+    id: "6",
+    levels: "8 Levels",
+    imgsrc: "abacus.jpeg",
+    title: "Finger (Hand) Abacus",
+    ageGroup: "6 to 15 Years",
+    description:
+      "Master mental arithmetic with our Abacus Techniques Mastery course.",
+    duration: "2 to 3 months",
     targetId: "phonics",
   },
 ];
@@ -46,11 +76,10 @@ const coursesData = [
       "Brain Development: Stimulate brain development and improve cognitive abilities.",
     ],
     duration: "2 to 3 Months",
-    schedule: "Classes held every Tuesday and Thursday from 4:00 PM to 6:00 PM",
   },
   {
     id: "handwriting",
-    title: "Handwriting Improvement",
+    title: "Handwriting ",
     description:
       "Refine your handwriting with our Handwriting Improvement course.",
     benefits: [
@@ -59,7 +88,6 @@ const coursesData = [
       "Confidence: Gain confidence in expressing yourself through clear and neat handwriting.",
     ],
     duration: "25 Classes",
-    schedule: "Classes held every Monday and Wednesday from 3:00 PM to 5:00 PM",
   },
   {
     id: "vedic-maths",
@@ -72,20 +100,42 @@ const coursesData = [
       "Holistic Approach: Vedic Math encourages a deeper understanding of the underlying mathematical concepts.",
       "Mental Agility: Practicing Vedic Math helps to sharpen your mental faculties and problem-solving abilities.",
     ],
-    duration: "10 weeks",
-    schedule: "Classes held every Tuesday and Thursday from 5:00 PM to 7:00 PM",
+    duration: "2 to 3 months",
   },
   {
     id: "phonics",
-    title: "Phonics for Beginners",
+    title: "Phonics",
     description: "Build literacy skills with our Phonics for Beginners course.",
     benefits: [
       "Reading Proficiency: Develop the ability to read fluently and accurately.",
       "Spelling Mastery: Learn spelling patterns and rules to improve spelling skills.",
       "Language Comprehension: Enhance language comprehension and vocabulary acquisition.",
     ],
-    duration: "12 weeks",
-    schedule: "Classes held every Tuesday and Thursday from 3:00 PM to 5:00 PM",
+    duration: "3 months",
+  },
+  {
+    id: "grammar",
+    title: "Grammar",
+    description:
+      "Master the fundamentals of grammar with our Grammar Essentials course.",
+    benefits: [
+      "Enhanced Writing Skills: Improve your writing clarity, coherence, and cohesion.",
+      "Effective Communication: Learn to express ideas clearly and accurately.",
+      "Grammar Mastery: Understand grammar rules and conventions for error-free writing.",
+    ],
+    duration: "4 to 5 months",
+  },
+  {
+    id: "abacus-hand",
+    title: "Finger (Hand) Abacus",
+    description:
+      "Unlock the power of mental calculation with our Finger (Hand) Abacus Mastery course.",
+    benefits: [
+      "Enhanced Mental Math Skills: Develop rapid mental calculation abilities.",
+      "Improved Concentration: Sharpen focus and concentration through abacus practice.",
+      "Brain Exercise: Stimulate cognitive functions and enhance brain development.",
+    ],
+    duration: "2 to 3 months",
   },
 ];
 export { courses, coursesData };

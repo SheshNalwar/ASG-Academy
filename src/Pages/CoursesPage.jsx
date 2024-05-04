@@ -1,19 +1,20 @@
 import { CourseSection, CoursesCard } from "../Index.js";
 import { courses, coursesData } from "../utils/Data.js";
-import "../css/App.scss";
+import "../css/CoursePage.scss";
 const CoursesPage = () => {
   return (
     <div className="coursePage">
       <div className="mainCourse">
         <div className="coursePageTitle">
-          <p className="coursePageMainTitle">Course Offerings </p>
+          <p className="coursePageMainTitle">Courses </p>
           <p className="coursePageSubtitle">
             Elevate Your Learning Journey with ASG Academy
           </p>
         </div>
+        <img src="course.jpeg" alt="" />
       </div>
       <div className="cardSection">
-        <p className="subtitle">Our Courses </p>
+        <p className="subtitle">Our Courses</p>
         <div className="cards">
           {courses.map((course) => (
             <CoursesCard
@@ -21,14 +22,15 @@ const CoursesPage = () => {
               imagesrc={course.imgsrc}
               title={course.title}
               duration={course.duration}
-              description={course.description}
+              levels={course.levels}
               targetId={course.targetId}
+              ageGroup={course.ageGroup}
             />
           ))}
         </div>
       </div>
       <div className="allCourseSection">
-        <p>Our Course Section : </p>
+        <p className="ourCourse">Our Course Section : </p>
         {coursesData.map((course) => (
           <CourseSection key={course.id} course={course} />
         ))}
