@@ -45,6 +45,7 @@ nav {
       }
       .navlinks {
         display: flex;
+        align-items: center;
         gap: 2rem;
         a {
           text-decoration: none;
@@ -73,6 +74,15 @@ nav {
         }
         .active::after {
           display: none;
+        }
+        #contactUsBtn {
+          padding: 7px;
+          cursor: pointer;
+          border: none;
+          border-radius: 10px;
+          background-color: #007bff;
+          color: #f9f9f9;
+          font-size: 1.1rem;
         }
       }
       .hamburgerMenu {
@@ -144,6 +154,11 @@ nav {
       .active {
         color: var(--accent);
       }
+      button{
+        border: none;
+        background-color: transparent;
+        font-size: 1rem;
+      }
     }
   }
 
@@ -204,19 +219,19 @@ nav {
         color: black;
       }
     }
-    .viewMoreDiv{
+    .viewMoreDiv {
       padding-right: 1rem;
       display: flex;
       justify-content: flex-end;
-      .viewMoreBtn{
+      .viewMoreBtn {
         cursor: pointer;
-        border:none;
+        border: none;
         outline: none;
         width: 6.5rem;
         border-radius: 10px;
         color: #007bff;
         background-color: transparent;
-        padding: .6rem 0;
+        padding: 0.6rem 0;
       }
     }
     // .courseDescription {
