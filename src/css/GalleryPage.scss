@@ -2,7 +2,7 @@
     padding-top: 7rem;
     // width: 98vw;
     overflow-x: hidden;
-    background: linear-gradient(to right, #E3F2FD 0%, #90CAF9 100%);
+    background-color: #fdfefe;
 
     .galleryTitle {
         margin-top: 10vh;
@@ -11,6 +11,9 @@
         color: black;
         height: 20vh;
         width: 100%;
+        span{
+            color: #007bff;
+        }
     }
 
     .galleryContainer {
