@@ -19,7 +19,7 @@ const CourseSection = ({ course }) => {
           </ol>
         </div>
         <div className="courseDuration">
-          <img src="duration-white.png" alt="" />
+          <img src="duration.png" alt="" />
           <p>{course.duration}</p>
         </div>
       </div>

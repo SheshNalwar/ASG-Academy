@@ -1,4 +1,6 @@
 :root {
+  --primary: #f2f4f6;
+  --secondary: #5f00ba;
   --accent: #007bff;
 }
 .coursePage {
@@ -24,23 +26,25 @@
       .coursePageMainTitle {
         font-size: 5rem;
         font-weight: bold;
-        color: var(--accent);
+        color: var(--secondary);
       }
       .coursePageSubtitle {
         font-size: 1.5rem;
+        span {
+          color: var(--accent);
+        }
       }
     }
   }
   .cardSection {
     gap: 1rem;
-    background-color: #6b00cf;
     display: flex;
     padding-bottom: 1rem;
     flex-direction: column;
     .subtitle {
       text-align: center;
       font-size: 2rem;
-      color: white;
+      color: var(--secondary);
       font-weight: 500;
     }
     .cards {
@@ -57,8 +61,8 @@
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    .ourCourse{
-        text-align: center;
+    .ourCourse {
+      text-align: center;
     }
   }
 }

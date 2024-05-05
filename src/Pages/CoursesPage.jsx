@@ -9,7 +9,7 @@ const CoursesPage = () => {
           <div className="coursePageTitle">
             <p className="coursePageMainTitle">Courses </p>
             <p className="coursePageSubtitle">
-              Elevate Your Learning Journey with ASG Academy
+              Elevate Your Learning Journey with <span>ASG Academy</span>
             </p>
           </div>
           <img src="course.jpeg" alt="" />

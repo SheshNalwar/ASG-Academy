@@ -1,5 +1,9 @@
 :root {
+  --primary: #f2f4f6;
+  --secondary: #5f00ba;
   --accent: #007bff;
+  --primary-darker:#dedede;
+  --primary-lighter:#cbcbcb;
 }
 
 nav {
@@ -173,12 +177,12 @@ nav {
   height: fit-content;
   border-radius: 15px;
   overflow: hidden;
-  background-color: #e6e6e6;
+  background-color: var(--secondary);
   padding-bottom: 1rem;
   transition: all 0.4s;
   box-shadow: -9.9px 11.04px 59.7px 0px rgba(0, 0, 0, 0.25);
   &:hover {
-    box-shadow: 10px 10px 30px #ffffff8f;
+    box-shadow: 10px 10px 30px #007bff73;
     transform: scale(0.98);
   }
   .image {
@@ -190,7 +194,6 @@ nav {
       height: 10rem;
     }
   }
-
   .courseDetails {
     padding-left: 1rem;
     display: flex;
@@ -198,11 +201,15 @@ nav {
     gap: 5px;
     .ageGroup {
       font-size: 1rem;
-      color: #333333;
+      color: var(--primary-darker);
+    }
+    h3{
+      color: var(--primary-darker);
+      font-weight: 700;
     }
     .levels {
       font-size: 1rem;
-      color: #333333;
+      color: var(--primary-lighter);
     }
     .duration {
       display: flex;
@@ -215,7 +222,7 @@ nav {
       }
       .courseDuration {
         font-size: clamp(1rem, 0.8rem, 0.9rem);
-        color: black;
+        color: var(--primary-darker);
         font-weight: 500;
       }
     }
@@ -229,8 +236,8 @@ nav {
         outline: none;
         width: 6.5rem;
         border-radius: 10px;
-        color: #007bff;
-        background-color: transparent;
+        color: white;
+        background-color: var(--accent);
         padding: 0.6rem 0;
       }
     }
@@ -238,7 +245,7 @@ nav {
 }
 
 .courseSection {
-  background-color: #5f00ba;
+  background-color: white;
   border-radius: 10px;
   width: 100%;
   display: flex;
@@ -264,10 +271,11 @@ nav {
       margin-bottom: 10px;
       h2 {
         font-size: 1.9rem;
+        color: var(--secondary);
         font-weight: 700;
       }
       #courseDesc {
-        color: #f9f9f9;
+        color: #7f7f7f;
         font-size: 1.4rem;
       }
     }
@@ -276,11 +284,13 @@ nav {
       margin-bottom: 15px;
       h3 {
         font-size: 1.2rem;
+        color: var(--secondary);
         margin-bottom: 5px;
       }
       ol {
         padding-left: 1rem;
         li {
+          color: var(--accent);
           list-style: decimal;
           border-radius: 10px;
           padding: 0.3rem;
@@ -297,7 +307,7 @@ nav {
       }
       p {
         font-size: 1.2rem;
-        color: white;
+        color: var(--accent);
         font-weight: 500;
       }
     }
@@ -305,7 +315,7 @@ nav {
 }
 
 .learningModel {
-  border: 2px solid red;
+  // border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,13 +332,13 @@ nav {
   }
 }
 
-footer{
+footer {
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border:2px solid red;
-  h1{
+  border: 2px solid red;
+  h1 {
     color: red;
   }
 }
