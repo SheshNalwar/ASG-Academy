@@ -2,15 +2,25 @@
     padding-top: 7rem;
     // width: 98vw;
     overflow-x: hidden;
-    background: linear-gradient(to right, #E3F2FD 0%, #90CAF9 100%);
+    // background: linear-gradient(to right, #E3F2FD 0%, #90CAF9 100%);
 
     .galleryTitle {
-        margin-top: 10vh;
+        margin-top: -15vh;
         text-align: center;
         font-size: 4vw;
         color: black;
-        height: 20vh;
+        height: 50vh;
         width: 100%;
+        background: linear-gradient(to right, #E3F2FD 0%, #90CAF9 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .academy {
+            color: #1565C0;
+            // color: white;
+            margin-left: 1vw;
+        }
     }
 
     .galleryContainer {

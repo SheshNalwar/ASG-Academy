@@ -28,8 +28,7 @@ const GalleryPage = () => {
 
   return (
     <div className="galleryPage">
-      {/* <div className="bgdiv"></div> */}
-      <h1 className="galleryTitle">Images from our Academy</h1>
+      <h1 className="galleryTitle">Images from our <span className="academy">Academy</span> </h1>
       <div className="galleryContainer">
         {data && data.map((image, index) => (
           <div className="galleryImage" key={index}>
