@@ -33,12 +33,14 @@
   }
   .cardSection {
     gap: 1rem;
+    background-color: #6b00cf;
     display: flex;
     padding-bottom: 1rem;
     flex-direction: column;
     .subtitle {
       text-align: center;
       font-size: 2rem;
+      color: white;
       font-weight: 500;
     }
     .cards {
