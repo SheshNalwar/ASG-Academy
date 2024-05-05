@@ -18,18 +18,26 @@ const NavBar = () => {
             <NavLink to="/" activeclassname="active">
               Home
             </NavLink>
+            <NavLink to="/about" activeclassname="active">
+              About Us
+            </NavLink>
+            <NavLink to="/courses" activeclassname="active">
+              Courses
+            </NavLink>
             <NavLink to="/gallery" activeclassname="active">
               Gallery
             </NavLink>
             <NavLink to="/achievements" activeclassname="active">
               Achievements
             </NavLink>
-            <NavLink to="/courses" activeclassname="active">
-              Courses
-            </NavLink>
-            <NavLink to="/about" activeclassname="active">
-              About Us
-            </NavLink>
+            <button
+              id="contactUsBtn"
+              onClick={() => {
+                window.open("https://forms.gle/6ZLDGXRLou66p9QBA");
+              }}
+            >
+              Contact Us
+            </button>
           </div>
           <div
             className={`hamburgerMenu ${open ? "active" : ""}`}
@@ -46,18 +54,25 @@ const NavBar = () => {
           <NavLink to="/" activeclassname="active">
             Home
           </NavLink>
+          <NavLink to="/about" activeclassname="active">
+            About Us
+          </NavLink>
+          <NavLink to="/courses" activeclassname="active">
+            Courses
+          </NavLink>
           <NavLink to="/gallery" activeclassname="active">
             Gallery
           </NavLink>
           <NavLink to="/achievements" activeclassname="active">
             Achievements
           </NavLink>
-          <NavLink to="/courses" activeclassname="active">
-            Courses
-          </NavLink>
-          <NavLink to="/about" activeclassname="active">
-            About Us
-          </NavLink>
+          <button
+            onClick={() => {
+              window.open("https://forms.gle/6ZLDGXRLou66p9QBA");
+            }}
+          >
+            Contact Us
+          </button>
         </ul>
       </div>
     </nav>

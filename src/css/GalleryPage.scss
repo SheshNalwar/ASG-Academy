@@ -2,24 +2,18 @@
     padding-top: 7rem;
     // width: 98vw;
     overflow-x: hidden;
-    // background: linear-gradient(to right, #E3F2FD 0%, #90CAF9 100%);
+    background-color: #fdfefe;
 
     .galleryTitle {
-        margin-top: -15vh;
+        margin-top: 10vh;
         text-align: center;
         font-size: 4vw;
         color: black;
-        height: 50vh;
+        height: 20vh;
         width: 100%;
-        background: linear-gradient(to right, #E3F2FD 0%, #90CAF9 100%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
-        .academy {
-            color: #1565C0;
-            // color: white;
-            margin-left: 1vw;
+        span {
+            color: #007bff;
         }
     }
 

@@ -2,24 +2,25 @@ import "../css/Components.scss";
 const CourseSection = ({ course }) => {
   return (
     <section id={course.id} className="courseSection">
-      <h2>{course.title} Course</h2>
-      <p>{course.description}</p>
-      <div className="sectionDetails">
-        <div className="detail">
+      <div className="image">
+        <img src={course.imgsrc} alt="" />
+      </div>
+      <div className="courseDetails">
+        <div className="courseTitleDesc">
+          <h2>{course.title}</h2>
+          <p id="courseDesc">{course.description}</p>
+        </div>
+        <div className="benefits">
           <h3>Benefits</h3>
-          <ul>
+          <ol role="list">
             {course.benefits.map((benefit, index) => (
               <li key={index}>{benefit}</li>
             ))}
-          </ul>
+          </ol>
         </div>
-        <div className="detail">
-          <h3>Duration</h3>
+        <div className="courseDuration">
+          <img src="duration.png" alt="" />
           <p>{course.duration}</p>
-        </div>
-        <div className="detail">
-          <h3>Schedule</h3>
-          <p>{course.schedule}</p>
         </div>
       </div>
     </section>
