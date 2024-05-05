@@ -2,7 +2,6 @@ import "../css/Components.scss";
 const CoursesCard = ({
   imagesrc,
   title,
-  description,
   duration,
   targetId,
   ageGroup,
@@ -24,7 +23,6 @@ const CoursesCard = ({
       <div className="courseDetails">
         <h3>{title}</h3>
         <p className="ageGroup">Age Group : {ageGroup}</p>
-        {/* <p className="courseDescription">{description}</p> */}
         <p className="levels">Total Levels : {levels}</p>
         <div className="duration">
           <img src="duration.png" alt="" />
