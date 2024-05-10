@@ -1,2 +1,2 @@
 # ASG-Academy
-Educational Website for ASG Academy.
+Educational Web Application for ASG Academy.
