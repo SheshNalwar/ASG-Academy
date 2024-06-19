@@ -1,9 +1,11 @@
 :root {
   --primary: #f2f4f6;
-  --secondary: #5f00ba;
-  --accent: #007bff;
-  --primary-darker:#dedede;
-  --primary-lighter:#cbcbcb;
+  --secondary: #ffffff;
+  --active:#007bff;
+  --accent: #008cff;
+  --accent2: #0d92ff;
+  --primary-darker:#4a4a4a;
+  --primary-lighter:#a0a0a0;
 }
 
 nav {
@@ -50,6 +52,7 @@ nav {
       .navlinks {
         display: flex;
         align-items: center;
+        min-width: fit-content;
         gap: 2rem;
         a {
           text-decoration: none;
@@ -74,7 +77,7 @@ nav {
           transform: scale(1, 1);
         }
         .active {
-          color: var(--accent);
+          color: var(--active);
         }
         .active::after {
           display: none;
@@ -83,6 +86,7 @@ nav {
           padding: 7px;
           cursor: pointer;
           border: none;
+          min-width: fit-content;
           border-radius: 10px;
           background-color: #007bff;
           color: #f9f9f9;
@@ -245,7 +249,6 @@ nav {
 }
 
 .courseSection {
-  background-color: white;
   border-radius: 10px;
   width: 100%;
   display: flex;
@@ -265,8 +268,6 @@ nav {
     display: flex;
     flex-direction: column;
     width: 70%;
-    color: white;
-
     .courseTitleDesc {
       margin-bottom: 10px;
       h2 {
@@ -290,7 +291,7 @@ nav {
       ol {
         padding-left: 1rem;
         li {
-          color: var(--accent);
+          color: var(--accent2);
           list-style: decimal;
           border-radius: 10px;
           padding: 0.3rem;
@@ -307,7 +308,7 @@ nav {
       }
       p {
         font-size: 1.2rem;
-        color: var(--accent);
+        color: var(--active);
         font-weight: 500;
       }
     }
@@ -333,11 +334,10 @@ nav {
 }
 
 footer {
-  height: 50vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
   h1 {
     color: red;
   }

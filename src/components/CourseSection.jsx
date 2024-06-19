@@ -1,26 +1,33 @@
 import "../css/Components.scss";
-const CourseSection = ({ course }) => {
+const CourseSection = ({
+  imagesrc,
+  title,
+  duration,
+  benefits,
+  description,
+  targetId
+}) => {
   return (
-    <section id={course.id} className="courseSection">
+    <section id={targetId} className="courseSection">
       <div className="image">
-        <img src={course.imgsrc} alt="" />
+        <img src={imagesrc} alt="" />
       </div>
       <div className="courseDetails">
         <div className="courseTitleDesc">
-          <h2>{course.title}</h2>
-          <p id="courseDesc">{course.description}</p>
+          <h2>{title}</h2>
+          <p id="courseDesc">{description}</p>
         </div>
         <div className="benefits">
           <h3>Benefits</h3>
           <ol role="list">
-            {course.benefits.map((benefit, index) => (
+            {benefits.map((benefit, index) => (
               <li key={index}>{benefit}</li>
             ))}
           </ol>
         </div>
         <div className="courseDuration">
           <img src="duration.png" alt="" />
-          <p>{course.duration}</p>
+          <p>{duration}</p>
         </div>
       </div>
     </section>

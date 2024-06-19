@@ -1,5 +1,5 @@
 import { CourseSection, CoursesCard, LearningModel, Footer } from "../Index.js";
-import { courses, coursesData } from "../utils/Data.js";
+import courses from "../utils/Data.js";
 import "../css/CoursePage.scss";
 const CoursesPage = () => {
   return (
@@ -31,15 +31,23 @@ const CoursesPage = () => {
             ))}
           </div>
         </div>
-
         <div className="allCourseSection">
           <p className="ourCourse">Our Course Section : </p>
-          {coursesData.map((course) => (
-            <CourseSection key={course.id} course={course} />
+          {courses.map((course) => (
+            <CourseSection
+              key={course.id}
+              course={course}
+              imagesrc={course.imgsrc}
+              targetId={course.targetId}
+              title={course.title}
+              duration={course.duration}
+              benefits={course.benefits}
+              description={course.description}
+            />
           ))}
         </div>
+        <Footer />
       </div>
-      {/* <Footer /> */}
     </>
   );
 };

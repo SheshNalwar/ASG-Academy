@@ -144,4 +144,21 @@
     }
   }
 }
+@media screen and (width<800px) {
+  nav{
+    .navbar{
+      ul{
+        .navlinks{
+          display: none;
+        }
+        .hamburgerMenu {
+          display: flex;
 
+          .lines {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
