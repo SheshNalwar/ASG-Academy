@@ -1,5 +1,5 @@
+import { NavLinks, ContactUsBtn } from "../Index";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import "../css/Components.scss";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -15,29 +15,8 @@ const NavBar = () => {
             <p>ASG Academy</p>
           </div>
           <div className="navlinks">
-            <NavLink to="/" activeclassname="active">
-              Home
-            </NavLink>
-            <NavLink to="/about" activeclassname="active">
-              About Us
-            </NavLink>
-            <NavLink to="/courses" activeclassname="active">
-              Courses
-            </NavLink>
-            <NavLink to="/gallery" activeclassname="active">
-              Gallery
-            </NavLink>
-            <NavLink to="/achievements" activeclassname="active">
-              Achievements
-            </NavLink>
-            <button
-              id="contactUsBtn"
-              onClick={() => {
-                window.open("https://forms.gle/6ZLDGXRLou66p9QBA");
-              }}
-            >
-              Contact Us
-            </button>
+            <NavLinks />
+            <ContactUsBtn btnId="contactUsBtn" />
           </div>
           <div
             className={`hamburgerMenu ${open ? "active" : ""}`}
@@ -51,28 +30,8 @@ const NavBar = () => {
       </div>
       <div className={`menuPage ${open ? "open" : ""}`}>
         <ul>
-          <NavLink to="/" activeclassname="active">
-            Home
-          </NavLink>
-          <NavLink to="/about" activeclassname="active">
-            About Us
-          </NavLink>
-          <NavLink to="/courses" activeclassname="active">
-            Courses
-          </NavLink>
-          <NavLink to="/gallery" activeclassname="active">
-            Gallery
-          </NavLink>
-          <NavLink to="/achievements" activeclassname="active">
-            Achievements
-          </NavLink>
-          <button
-            onClick={() => {
-              window.open("https://forms.gle/6ZLDGXRLou66p9QBA");
-            }}
-          >
-            Contact Us
-          </button>
+          <NavLinks />
+          <ContactUsBtn btnId="menuContactBtn" />
         </ul>
       </div>
     </nav>
