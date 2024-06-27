@@ -1,6 +1,6 @@
-import { NavLinks, ContactUsBtn } from "../Index";
+import { NavLinks, ContactUsBtn } from "../../Index";
 import { useState } from "react";
-import "../css/Components.scss";
+import "../../css/Components.scss";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   function toggleMenu() {

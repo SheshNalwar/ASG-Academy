@@ -1,19 +1,23 @@
-// Components :
-import CourseSection from "./components/CourseSection";
-import LearningModel from "./components/LearningModel";
-import NavLinkRoutes from "./components/NavLinkRoutes";
-import ContactUsBtn from "./components/ContactUsBtn";
-import CoursesCard from "./components/CoursesCard";
-import NavLinks from "./components/NavLinks";
-import NavBar from "./components/NavBar";
+// Course Components :
+import CourseSection from "./components/Course/CourseSection";
+import CoursesCard from "./components/Course/CoursesCard";
+import CourseStats from "./components/Course/CourseStats";
+
+// Nav Components :
+import NavLinkRoutes from "./components/Nav/NavLinkRoutes";
+import NavLinks from "./components/Nav/NavLinks";
+import NavBar from "./components/Nav/NavBar";
+
+// Other Components :
 import Footer from "./components/Footer";
+import ContactUsBtn from "./components/ContactUsBtn";
 
 // Export Components  :
 export {
   NavBar,
+  CourseStats,
   CourseSection,
   CoursesCard,
-  LearningModel,
   Footer,
   NavLinks,
   ContactUsBtn,

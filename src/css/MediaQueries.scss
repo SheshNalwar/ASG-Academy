@@ -35,51 +35,6 @@
     }
   }
 
-  .courseSection {
-    .image {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      img {
-        height: 17rem;
-        width: 17rem;
-      }
-    }
-
-    .courseDetails {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-      width: 100%;
-
-      .courseTitleDesc {
-        h2 {
-          font-size: 1.5rem;
-        }
-
-        #courseDesc {
-          font-size: 1.3rem;
-        }
-      }
-
-      .benefits {
-        ol {
-          li {
-            padding: 0.2rem;
-          }
-        }
-      }
-
-      .courseDuration {
-        img {
-          width: 1.5rem;
-          height: 1.5rem;
-        }
-      }
-    }
-  }
-
   .coursePage {
     flex-direction: column;
 
@@ -143,12 +98,24 @@
       }
     }
   }
+
+  .courseSection {
+    .layout-container {
+      .content-wrapper {
+        .features-container {
+          .feature-item {
+            min-width: 95vw;
+          }
+        }
+      }
+    }
+  }
 }
-@media screen and (width<800px) {
-  nav{
-    .navbar{
-      ul{
-        .navlinks{
+@media screen and (width<1080px) {
+  nav {
+    .navbar {
+      ul {
+        .navlinks {
           display: none;
         }
         .hamburgerMenu {
@@ -156,6 +123,17 @@
 
           .lines {
             display: block;
+          }
+        }
+      }
+    }
+  }
+  .courseSection {
+    .layout-container {
+      .content-wrapper {
+        .features-container {
+          .feature-item {
+            min-width: 95vw;
           }
         }
       }

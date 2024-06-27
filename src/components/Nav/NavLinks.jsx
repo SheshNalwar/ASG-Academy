@@ -1,4 +1,4 @@
-import { NavLinkRoutes } from "../Index";
+import { NavLinkRoutes } from "../../Index";
 const NavLinks = () => {
   return (
     <>
