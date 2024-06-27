@@ -1,36 +1,13 @@
 :root {
-  --accent: #007bff;
+  --primary: #f2f4f6;
+  --secondary: #007bffe2;
+  --accent: #ffffff;
 }
 .coursePage {
-  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-top: 2rem;
-  .mainCourse {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    align-items: center;
-    img {
-      max-width: 400px;
-      max-height: 400px;
-    }
-    .coursePageTitle {
-      text-align: center;
-      font-weight: 500;
-      .coursePageMainTitle {
-        font-size: 5rem;
-        font-weight: bold;
-        color: var(--accent);
-      }
-      .coursePageSubtitle {
-        font-size: 1.5rem;
-      }
-    }
-  }
+  padding-top: 15vh;
   .cardSection {
     gap: 1rem;
     display: flex;
@@ -38,7 +15,8 @@
     flex-direction: column;
     .subtitle {
       text-align: center;
-      font-size: 2rem;
+      font-size: 3rem;
+      color: var(--secondary);
       font-weight: 500;
     }
     .cards {
@@ -50,13 +28,11 @@
     }
   }
   .allCourseSection {
-    margin-top: 2rem;
-    height: 100vh;
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    .ourCourse{
-        text-align: center;
+    .ourCourse {
+      text-align: center;
     }
   }
 }
