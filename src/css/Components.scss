@@ -3,9 +3,6 @@
   --secondary: #ffffff;
   --active: #007bff;
   --accent: #008cff;
-  --accent2: #0d92ff;
-  --primary-darker: #4a4a4a;
-  --primary-lighter: #a0a0a0;
 }
 
 nav {
@@ -135,7 +132,6 @@ nav {
       }
     }
   }
-
   .menuPage {
     border-radius: 10px;
     padding: 1rem 0;
@@ -146,19 +142,16 @@ nav {
     backdrop-filter: blur(10px);
     position: fixed;
     top: 5rem;
-
     ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 2rem;
-
       a {
         text-decoration: none;
         color: black;
       }
-
       .active {
         color: var(--accent);
       }
@@ -169,7 +162,6 @@ nav {
       }
     }
   }
-
   .open {
     transform: translateY(0%);
   }
@@ -361,13 +353,57 @@ nav {
   }
 }
 
-
 footer {
+  background-color: #dcdcdc;
   height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   h1 {
     color: red;
+    font-size: 2rem;
+  }
+}
+
+// Media Queries
+@media screen and (width<600px) {
+  nav {
+    .navbar {
+      ul {
+        padding: 0 1rem;
+        .navlinks {
+          display: none;
+        }
+        .hamburgerMenu {
+          display: flex;
+          .lines {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .coursecard {
+    min-width: 18rem;
+    .image {
+      width: 100%;
+      img {
+        min-width: 16rem;
+      }
+    }
+    &:hover {
+      transform: none;
+    }
+  }
+  .courseSection{
+    .layout-container{
+      .content-wrapper{
+        .features-container{
+          .feature-item {
+            max-width: 100%;
+          }
+        }
+      }
+    }
   }
 }

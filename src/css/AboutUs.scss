@@ -1,6 +1,5 @@
 .aboutUsPage {
     padding-top: 7rem;
-
     .aboutTitle {
         margin-top: -20vh;
         text-align: center;
@@ -13,7 +12,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
         h1 {
             font-size: 5vw;
         }
@@ -25,20 +23,16 @@
         justify-content: center;
         padding: 5vw;
         gap: 5vw;
-
         .academy-content {
             width: 50%;
-
             .academy-title {
                 font-size: 3vw;
             }
-
             .academy-text {
                 margin-top: 5vh;
                 font-size: 1.5vw;
             }
         }
-
         img {
             height: 60vh;
             width: 30vw;
@@ -47,14 +41,12 @@
             object-fit: cover;
         }
     }
-
     .director-msg {
         display: flex;
         align-items: top;
         justify-content: center;
         padding: 5vw;
         gap: 5vw;
-
         img {
             margin-top: 5vh;
             height: 70vh;
@@ -63,66 +55,16 @@
             box-shadow: 5px 5px 30px #0000004f;
             object-fit: cover;
         }
-
         .msg {
             width: 50%;
-
             .msg-title {
                 font-size: 3vw;
             }
-
             .msg-text {
                 margin-top: 5vh;
                 font-size: 1.5vw;
             }
         }
     }
-
-    .footer {
-        height: 70vh;
-        width: 100%;
-        display: flex;
-        align-items: top;
-        justify-content: center;
-        padding: 3vw 7vw;
-        gap: 5vw;
-        border-radius: 10px;
-        background: linear-gradient(to right, #E3F2FD 0%, #BBDEFB 100%);
-
-
-        .services {
-            width: 50%;
-
-            .services-p {
-                font-size: 1.5vw;
-                color: #007bff;
-            }
-
-            .services-contact {
-                font-size: 3vw;
-            }
-
-            .services-address {
-                font-size: 1.3vw;
-                margin-top: 2vh;
-                line-height: 1.5;
-            }
-        }
-
-        .policy {
-            width: 50%;
-
-            .policy-title {
-                font-size: 3vw;
-            }
-
-            .policy-text {
-                font-size: 1.3vw;
-                margin-top: 2vh;
-                line-height: 1.5;
-            }
-        }
-    }
-
-
+    
 }

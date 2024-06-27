@@ -211,3 +211,8 @@ const courses = [
   },
 ];
 export default courses;
+const contactUs =
+  "ASG Academy, Plot no 221/222, Flat no-11, Shiva ganga Nagar, Near Santoshi mata Temple, Jule Solapur Solapur 413004 Mobile- 8830943211 ,9130646448";
+
+const policy =
+  "As Of Now We Do Not Provide Any Option For Cancellation Of Products And/Or Services You Have Purchased Or Subscribed. Once A Product/Service Has Been Purchased By You, We Cannot Provide Any Refund, Either Totally Or Partially. We Suggest That First You Go Through The Demos Before You Subscribe To Or Purchase From ASG ACADEMY And As A Customer You Are Responsible For Understanding That No Refund Or Cancellation Is Possible Upon Any Subscription At Our Site";
