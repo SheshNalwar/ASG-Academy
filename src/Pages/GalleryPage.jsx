@@ -11,7 +11,7 @@ const GalleryPage = () => {
           title,
           mainImage {
             asset-> {
-              _id,
+              _id, 
               url
             },
             alt
