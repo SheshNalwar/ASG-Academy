@@ -1,45 +1,60 @@
 .list-item {
-  margin-top: 50px;
+  margin-top: 1rem;
   display: flex;
-  justify-content: center;
+  padding: 1rem;
+  border-radius: 25px;
+  gap: 1rem;
   .list-item-image {
     .item-image {
-      width: 500px;
-      height: 300px;
+      width: clamp(21.5625rem, 15.3526rem + 19.8718vw, 31.25rem);
+      height: clamp(14.375rem, 12.3718rem + 6.4103vw, 17.5rem);
       border-radius: 25px;
     }
   }
   .list-item-details {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
     .list-item-title {
       font-weight: bold;
-      margin-bottom: 5px;
-      font-size: 40px;
+      font-size: clamp(1.875rem, 1.5909rem + 1.1364vw, 2.5rem);
     }
     .list-item-description {
       color: #3a3a3a;
-      font-size: 18px;
+      font-size: clamp(1rem, 0.9199rem + 0.2564vw, 1.125rem);
       font-weight: 600;
     }
   }
 }
 
-.achievementsPage{
+.achievementsPage {
   padding-top: 7rem;
-  .mainTitle{
+  .mainTitle {
     margin-top: -20vh;
-        text-align: center;
-        font-size: 4vw;
-        color: black;
-        height: 50vh;
-        width: 100%;
-        background: linear-gradient(to right, #E3F2FD 0%, #BBDEFB 100%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h1 {
-            font-size: 5vw;
-        }
+    text-align: center;
+    color: black;
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(to right, #e3f2fd 0%, #bbdefb 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: clamp(2.8rem, 2.0308rem + 2.4615vw, 4rem);
     }
+  }
+  .list {
+    padding: 1rem;
+    align-items: center;
+  }
+}
+@media screen and (width<600px) {
+  .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
