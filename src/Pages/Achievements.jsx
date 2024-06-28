@@ -1,4 +1,4 @@
-import "../css/achievements.scss";
+import "../css/Achievements.scss";
 
 const ListItem = ({ imageSrc, title, description }) => (
   <div className="list-item">
@@ -8,9 +8,6 @@ const ListItem = ({ imageSrc, title, description }) => (
     <div className="list-item-details">
       <h2 className="list-item-title">{title}</h2>
       <p className="list-item-description">{description}</p>
-      <div className="list-item-button">
-        <button className="item-button">View more</button>
-      </div>
     </div>
   </div>
 );
@@ -58,16 +55,8 @@ const App = () => {
   ];
 
   return (
-    <div className="app">
-      <div
-        style={{
-          width: "100%",
-          height: "auto",
-          backgroundColor: "#E7FDFB",
-          paddingTop: "60px",
-          paddingBottom: "40px",
-        }}
-      >
+    <div className="achievementsPage">
+      <div className="mainTitle">
         <h1>Achievements</h1>
       </div>
       <List items={itemList} />

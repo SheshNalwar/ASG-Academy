@@ -175,9 +175,10 @@ nav {
   background-color: var(--secondary);
   padding-bottom: 1rem;
   transition: all 0.4s;
-  box-shadow: -9.9px 11.04px 59.7px 0px rgba(0, 0, 0, 0.142);
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
   &:hover {
-    box-shadow: 10px 10px 30px #00000057;
     transform: scale(0.98);
   }
   .image {
@@ -258,7 +259,7 @@ nav {
         justify-content: center;
         margin-bottom: 20px;
         .image {
-          background-color: #cbd5e1;
+          box-shadow: 1px 1px 5px #00000062;
           height: 200px;
           width: 100%;
           max-width: 400px;
@@ -395,10 +396,10 @@ footer {
       transform: none;
     }
   }
-  .courseSection{
-    .layout-container{
-      .content-wrapper{
-        .features-container{
+  .courseSection {
+    .layout-container {
+      .content-wrapper {
+        .features-container {
           .feature-item {
             max-width: 100%;
           }
