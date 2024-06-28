@@ -5,15 +5,33 @@ import CoursesPage from "./Pages/CoursesPage";
 import GalleryPage from "./Pages/GalleryPage";
 import HomePage from "./Pages/HomePage";
 
-// Components :
-import NavBar from "./components/NavBar";
-import CourseSection from "./components/CourseSection";
-import CoursesCard from "./components/CoursesCard";
-import LearningModel from "./components/LearningModel";
+//Navbar Components :
+import NavBar from "./components/Nav/NavBar";
+import NavLinks from "./components/Nav/NavLinks";
+import NavLinkRoutes from "./components/Nav/NavLinkRoutes";
+
+//Course Components :
+import CourseSection from "./components/Course/CourseSection";
+import CourseStats from "./components/Course/CourseStats";
+import CoursesCard from "./components/Course/CoursesCard";
+
+// Other Components :
 import Footer from "./components/Footer";
+import ContactUsBtn from "./components/ContactUsBtn";
 
-// Export Components  :
-export { NavBar, CourseSection, CoursesCard, LearningModel, Footer };
-
-// Export Pages  :
-export { AboutUsPage, Achievements, CoursesPage, GalleryPage, HomePage };
+// Exportation :
+export {
+  ContactUsBtn,
+  NavLinkRoutes,
+  NavLinks,
+  NavBar,
+  CourseSection,
+  CoursesCard,
+  Footer,
+  CourseStats,
+  AboutUsPage,
+  Achievements,
+  CoursesPage,
+  GalleryPage,
+  HomePage,
+};

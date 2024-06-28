@@ -1,14 +1,13 @@
-import "../css/Components.scss";
+import "../../css/Components.scss";
 const CoursesCard = ({
   imagesrc,
   title,
   duration,
   targetId,
   ageGroup,
-  levels,
 }) => {
   const scrollToCourse = () => {
-    const gap = 80;
+    const gap = 60;
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       const offsetTop = targetElement.offsetTop - gap;
@@ -23,7 +22,6 @@ const CoursesCard = ({
       <div className="courseDetails">
         <h3>{title}</h3>
         <p className="ageGroup">Age Group : {ageGroup}</p>
-        <p className="levels">Total Levels : {levels}</p>
         <div className="duration">
           <img src="duration-white.png" alt="" />
           <p className="courseDuration">{duration}</p>

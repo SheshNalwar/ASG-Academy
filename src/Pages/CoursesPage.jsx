@@ -1,20 +1,10 @@
-import { CourseSection, CoursesCard, LearningModel, Footer } from "../Index.js";
-import { courses, coursesData } from "../utils/Data.js";
+import { CourseSection, CoursesCard, Footer } from "../Index.js";
+import courses from "../utils/Data.js";
 import "../css/CoursePage.scss";
 const CoursesPage = () => {
   return (
     <>
       <div className="coursePage">
-        <div className="mainCourse">
-          <div className="coursePageTitle">
-            <p className="coursePageMainTitle">Courses </p>
-            <p className="coursePageSubtitle">
-              Elevate Your Learning Journey with <span>ASG Academy</span>
-            </p>
-          </div>
-          <img src="course.jpeg" alt="" />
-        </div>
-        <LearningModel />
         <div className="cardSection">
           <p className="subtitle">Our Courses</p>
           <div className="cards">
@@ -31,15 +21,14 @@ const CoursesPage = () => {
             ))}
           </div>
         </div>
-
         <div className="allCourseSection">
           <p className="ourCourse">Our Course Section : </p>
-          {coursesData.map((course) => (
-            <CourseSection key={course.id} course={course} />
-          ))}
+          {courses.map((course) => {
+            return <CourseSection courseData={course} key={course.id} />;
+          })}
         </div>
+        <Footer />
       </div>
-      {/* <Footer /> */}
     </>
   );
 };
