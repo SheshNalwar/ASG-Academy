@@ -1,4 +1,4 @@
-import "../css/Achievements.scss";
+import "../css/achievements.scss";
 
 const ListItem = ({ imageSrc, title, description }) => (
   <div className="list-item">
@@ -26,7 +26,7 @@ const List = ({ items }) => (
 );
 
 //get the data from  db
-const App = () => {
+const Achievements = () => {
   const itemList = [
     {
       id: 1,
