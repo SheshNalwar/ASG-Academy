@@ -27,6 +27,7 @@ const HomePage = () => {
         <p>The world-leading platform with successful lessons.</p>
       </div>
       <div className="faculty">
+        <div className="bgdiv2"></div>
         <img className="faculty-1-icon" alt="" src="icon8-account-50.pn" />
         <h3 id="title">Our Professional Teachers</h3>
         <div className="facultyDetails">
