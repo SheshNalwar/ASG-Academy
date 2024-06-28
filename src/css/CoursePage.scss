@@ -1,6 +1,5 @@
 :root {
   --primary: #f2f4f6;
-<<<<<<< HEAD
   --secondary: #5f00ba;
   --accent: #007bff;
 }
@@ -37,16 +36,6 @@
       }
     }
   }
-=======
-  --secondary: #007bffe2;
-  --accent: #ffffff;
-}
-.coursePage {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding-top: 15vh;
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
   .cardSection {
     gap: 1rem;
     display: flex;
@@ -54,11 +43,7 @@
     flex-direction: column;
     .subtitle {
       text-align: center;
-<<<<<<< HEAD
       font-size: 2rem;
-=======
-      font-size: 3rem;
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
       color: var(--secondary);
       font-weight: 500;
     }
@@ -71,11 +56,8 @@
     }
   }
   .allCourseSection {
-<<<<<<< HEAD
     margin-top: 2rem;
     height: 100vh;
-=======
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -84,23 +66,3 @@
     }
   }
 }
-<<<<<<< HEAD
-=======
-@media screen and (width<600px) {
-  .coursePage {
-    flex-direction: column;
-    .mainCourse {
-      flex-direction: column;
-      img {
-        max-width: 300px;
-        max-height: 300px;
-      }
-      .coursePageTitle {
-        .coursePageMainTitle {
-          font-size: 4rem;
-        }
-      }
-    }
-  }
-}
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba

@@ -1,15 +1,9 @@
 :root {
   --primary: #f2f4f6;
-<<<<<<< HEAD
   --secondary: #5f00ba;
   --accent: #007bff;
   --primary-darker:#dedede;
   --primary-lighter:#cbcbcb;
-=======
-  --secondary: #ffffff;
-  --active: #007bff;
-  --accent: #008cff;
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
 }
 
 nav {
@@ -56,10 +50,6 @@ nav {
       .navlinks {
         display: flex;
         align-items: center;
-<<<<<<< HEAD
-=======
-        min-width: fit-content;
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
         gap: 2rem;
         a {
           text-decoration: none;
@@ -75,7 +65,7 @@ nav {
           position: absolute;
           height: 2px;
           border-radius: 1px;
-          background-color: var(--active);
+          background-color: var(--accent);
           left: 0;
           bottom: 0;
           transition: transform 0.3s ease;
@@ -84,7 +74,7 @@ nav {
           transform: scale(1, 1);
         }
         .active {
-          color: var(--active);
+          color: var(--accent);
         }
         .active::after {
           display: none;
@@ -93,10 +83,6 @@ nav {
           padding: 7px;
           cursor: pointer;
           border: none;
-<<<<<<< HEAD
-=======
-          min-width: fit-content;
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
           border-radius: 10px;
           background-color: #007bff;
           color: #f9f9f9;
@@ -145,6 +131,7 @@ nav {
       }
     }
   }
+
   .menuPage {
     border-radius: 10px;
     padding: 1rem 0;
@@ -155,30 +142,30 @@ nav {
     backdrop-filter: blur(10px);
     position: fixed;
     top: 5rem;
+
     ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 2rem;
+
       a {
         text-decoration: none;
         color: black;
       }
+
       .active {
         color: var(--accent);
       }
-<<<<<<< HEAD
       button {
-=======
-      #menuContactBtn {
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
         border: none;
         background-color: transparent;
         font-size: 1rem;
       }
     }
   }
+
   .open {
     transform: translateY(0%);
   }
@@ -187,15 +174,22 @@ nav {
 .coursecard {
   cursor: pointer;
   max-width: 18rem;
+  height: fit-content;
   border-radius: 15px;
   overflow: hidden;
   background-color: var(--secondary);
   padding-bottom: 1rem;
   transition: all 0.4s;
+<<<<<<< HEAD
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
   &:hover {
+=======
+  box-shadow: -9.9px 11.04px 59.7px 0px rgba(0, 0, 0, 0.25);
+  &:hover {
+    box-shadow: 10px 10px 30px #007bff73;
+>>>>>>> parent of 80853f8 (Merge branch 'main' of https://github.com/SheshNalwar/ASG-Academy)
     transform: scale(0.98);
   }
   .image {
@@ -214,7 +208,6 @@ nav {
     gap: 5px;
     .ageGroup {
       font-size: 1rem;
-<<<<<<< HEAD
       color: var(--primary-darker);
     }
     h3{
@@ -225,14 +218,6 @@ nav {
       font-size: 1rem;
       color: var(--primary-lighter);
     }
-=======
-      color: var(--primary);
-    }
-    h3 {
-      color: var(--primary);
-      font-weight: 700;
-    }
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
     .duration {
       display: flex;
       align-items: center;
@@ -244,11 +229,7 @@ nav {
       }
       .courseDuration {
         font-size: clamp(1rem, 0.8rem, 0.9rem);
-<<<<<<< HEAD
         color: var(--primary-darker);
-=======
-        color: var(--primary);
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
         font-weight: 500;
       }
     }
@@ -262,11 +243,7 @@ nav {
         outline: none;
         width: 6.5rem;
         border-radius: 10px;
-<<<<<<< HEAD
         color: white;
-=======
-        color: rgb(0, 0, 0);
->>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
         background-color: var(--accent);
         padding: 0.6rem 0;
       }
@@ -275,7 +252,6 @@ nav {
 }
 
 .courseSection {
-<<<<<<< HEAD
   background-color: white;
   border-radius: 10px;
   width: 100%;
@@ -317,6 +293,7 @@ nav {
         font-size: 1.2rem;
         color: var(--secondary);
         margin-bottom: 5px;
+<<<<<<< HEAD
 =======
   display: flex;
   justify-content: center;
@@ -486,6 +463,8 @@ footer {
           }
         }
 >>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
+=======
+>>>>>>> parent of 80853f8 (Merge branch 'main' of https://github.com/SheshNalwar/ASG-Academy)
       }
       ol {
         padding-left: 1rem;
