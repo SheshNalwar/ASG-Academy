@@ -3,6 +3,11 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "popins", sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "popins", sans-serif;
 }
 // .homepage{
 //   height: 100vh;
@@ -56,7 +61,10 @@
   height: 200px;
   border-radius: 360px;
 }
+
 .Homepage-1-item {
+  top: 650px;
+  left: 950px;
   top: 650px;
   left: 950px;
   border-radius: 37.5px;
@@ -65,8 +73,16 @@
   box-sizing: border-box;
   width: 500px;
   height: 60px;
-  border: none;
 }
+.search-icon {
+  position: absolute;
+  top: 658px;
+  left: 955px;
+  width: 47px;
+  height: 47px;
+  object-fit: cover;
+}
+
 
 .Homepage-1 {
   width: 100%;
@@ -90,6 +106,7 @@
 p {
   font-size: 24px;
 }
+
 .circle-1-child {
   position: absolute;
 
@@ -100,7 +117,17 @@ p {
   width: 80px;
   border: 5px solid #2196f3;
   height: 80px;
+  position: absolute;
+
+  top: 403px;
+  left: 52px;
+  border-radius: 50%;
+
+  width: 80px;
+  border: 5px solid #2196f3;
+  height: 80px;
 }
+
 .circle-2-child {
   position: absolute;
 
@@ -111,7 +138,17 @@ p {
   width: 40px;
   border: 10px solid #815cb1;
   height: 40px;
+  position: absolute;
+
+  top: 203px;
+  left: 400px;
+  border-radius: 50%;
+
+  width: 40px;
+  border: 10px solid #815cb1;
+  height: 40px;
 }
+
 .circle-3-child {
   position: absolute;
   top: 600px;
@@ -121,8 +158,26 @@ p {
   width: 30px;
   border: 10px solid #16423f;
   height: 30px;
+  position: absolute;
+  top: 600px;
+  left: 600px;
+  border-radius: 50%;
+
+  width: 30px;
+  border: 10px solid #16423f;
+  height: 30px;
 }
+
 .circle-4-child {
+  position: absolute;
+
+  top: 800px;
+  left: 90px;
+  border-radius: 50%;
+
+  width: 40px;
+  border: 5px solid #b6343c;
+  height: 40px;
   position: absolute;
 
   top: 800px;
