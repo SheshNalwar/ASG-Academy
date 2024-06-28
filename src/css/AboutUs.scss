@@ -1,7 +1,9 @@
 .aboutUsPage {
-  padding-top: 7rem;
+  // padding-top: 7rem;
+  margin-bottom: 5vh;
+
   .aboutTitle {
-    margin-top: -20vh;
+    // margin-top: -20vh;
     text-align: center;
     font-size: 4vw;
     color: black;
@@ -12,26 +14,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     h1 {
       font-size: 5vw;
     }
   }
+
   .about-academy {
     display: flex;
     align-items: top;
     justify-content: center;
     padding: 5vw;
     gap: 5vw;
+
     .academy-content {
       width: 50%;
+
       .academy-title {
         font-size: 3vw;
       }
+
       .academy-text {
         margin-top: 5vh;
         font-size: 1.5vw;
       }
     }
+
     img {
       height: 60vh;
       width: 30vw;
@@ -40,12 +48,14 @@
       object-fit: cover;
     }
   }
+
   .director-msg {
     display: flex;
     align-items: top;
     justify-content: center;
     padding: 5vw;
     gap: 5vw;
+
     img {
       margin-top: 5vh;
       height: 70vh;
@@ -54,15 +64,89 @@
       box-shadow: 5px 5px 30px #0000004f;
       object-fit: cover;
     }
+
     .msg {
       width: 50%;
+
       .msg-title {
         font-size: 3vw;
       }
+
       .msg-text {
         margin-top: 5vh;
         font-size: 1.5vw;
       }
     }
+  }
+}
+
+
+@media screen and (width<600px) {
+
+  .aboutUsPage {
+    margin-bottom: 5vh;
+
+    .aboutTitle {
+      height: 30vh;
+      margin: 0;
+
+      h1 {
+        position: absolute;
+        top: 15%;
+        font-size: 10vw;
+      }
+    }
+
+    .about-academy {
+      flex-direction: column;
+      align-items: center;
+
+      padding: 5vw;
+
+      .academy-content {
+        width: 100%;
+
+        .academy-title {
+          font-size: 8vw;
+        }
+
+        .academy-text {
+          font-size: 4vw;
+        }
+      }
+
+      img {
+        height: 40vh;
+        width: 100%;
+      }
+    }
+
+
+    .director-msg {
+      flex-direction: column-reverse;
+      align-items: center;
+      // padding: 5vw;
+
+      .msg {
+        width: 100%;
+
+        .msg-title {
+          font-size: 8vw;
+          line-height: 1.2;
+        }
+
+        .msg-text {
+          margin-top: 2vh;
+          font-size: 4vw;
+        }
+      }
+
+      img {
+        height: 40vh;
+        width: 100%;
+      }
+    }
+
+
   }
 }
