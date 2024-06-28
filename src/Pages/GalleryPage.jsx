@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { client } from '../utils/schema.js';
-import "../css/App.scss"
+import { client } from "../utils/schema.js";
+import "../css/GalleryPage.scss";
 const GalleryPage = () => {
   const [data, setData] = useState([]);
 
@@ -28,14 +28,22 @@ const GalleryPage = () => {
 
   return (
     <div className="galleryPage">
-      <h1 className="galleryTitle">Images from our Academy</h1>
+      <div className="galleryTitle">
+        <h1>Image <span className="academy"> Gallery </span></h1>
+        <p>Embark on a Journey of Knowledge with Our Academy</p>
+      </div>
       <div className="galleryContainer">
-        {data && data.map((image, index) => (
-          <div className="galleryImage" key={index}>
-            <h3 className="imgTitle">{image.title}</h3>
-            <img src={image.mainImage.asset.url} alt={image.mainImage.alt} className="image" />
-          </div>
-        ))}
+        {data &&
+          data.map((image, index) => (
+            <div className="galleryImage" key={index}>
+              <h3 className="imgTitle">{image.title}</h3>
+              <img
+                src={image.mainImage.asset.url}
+                alt={image.mainImage.alt}
+                className="image"
+              />
+            </div>
+          ))}
       </div>
     </div>
   );
