@@ -66,6 +66,7 @@ nav {
           height: 2px;
           border-radius: 1px;
           background-color: var(--accent);
+          background-color: var(--accent);
           left: 0;
           bottom: 0;
           transition: transform 0.3s ease;
@@ -74,6 +75,7 @@ nav {
           transform: scale(1, 1);
         }
         .active {
+          color: var(--accent);
           color: var(--accent);
         }
         .active::after {
@@ -132,6 +134,7 @@ nav {
     }
   }
 
+
   .menuPage {
     border-radius: 10px;
     padding: 1rem 0;
@@ -143,12 +146,14 @@ nav {
     position: fixed;
     top: 5rem;
 
+
     ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 2rem;
+
 
       a {
         text-decoration: none;
