@@ -31,5 +31,18 @@ import CoursesPage from "./Pages/CoursesPage";
 import GalleryPage from "./Pages/GalleryPage";
 import HomePage from "./Pages/HomePage";
 
+<<<<<<< HEAD
+// Components :
+import NavBar from "./components/NavBar";
+import CourseSection from "./components/CourseSection";
+import CoursesCard from "./components/CoursesCard";
+import LearningModel from "./components/LearningModel";
+import Footer from "./components/Footer";
+
+// Export Components  :
+export { NavBar, CourseSection, CoursesCard, LearningModel, Footer };
+
+=======
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
 // Export Pages  :
 export { AboutUsPage, Achievements, CoursesPage, GalleryPage, HomePage };

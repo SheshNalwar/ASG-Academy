@@ -1,8 +1,15 @@
 :root {
   --primary: #f2f4f6;
+<<<<<<< HEAD
+  --secondary: #5f00ba;
+  --accent: #007bff;
+  --primary-darker:#dedede;
+  --primary-lighter:#cbcbcb;
+=======
   --secondary: #ffffff;
   --active: #007bff;
   --accent: #008cff;
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
 }
 
 nav {
@@ -49,7 +56,10 @@ nav {
       .navlinks {
         display: flex;
         align-items: center;
+<<<<<<< HEAD
+=======
         min-width: fit-content;
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
         gap: 2rem;
         a {
           text-decoration: none;
@@ -83,7 +93,10 @@ nav {
           padding: 7px;
           cursor: pointer;
           border: none;
+<<<<<<< HEAD
+=======
           min-width: fit-content;
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
           border-radius: 10px;
           background-color: #007bff;
           color: #f9f9f9;
@@ -155,7 +168,11 @@ nav {
       .active {
         color: var(--accent);
       }
+<<<<<<< HEAD
+      button {
+=======
       #menuContactBtn {
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
         border: none;
         background-color: transparent;
         font-size: 1rem;
@@ -197,12 +214,25 @@ nav {
     gap: 5px;
     .ageGroup {
       font-size: 1rem;
+<<<<<<< HEAD
+      color: var(--primary-darker);
+    }
+    h3{
+      color: var(--primary-darker);
+      font-weight: 700;
+    }
+    .levels {
+      font-size: 1rem;
+      color: var(--primary-lighter);
+    }
+=======
       color: var(--primary);
     }
     h3 {
       color: var(--primary);
       font-weight: 700;
     }
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
     .duration {
       display: flex;
       align-items: center;
@@ -214,7 +244,11 @@ nav {
       }
       .courseDuration {
         font-size: clamp(1rem, 0.8rem, 0.9rem);
+<<<<<<< HEAD
+        color: var(--primary-darker);
+=======
         color: var(--primary);
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
         font-weight: 500;
       }
     }
@@ -228,7 +262,11 @@ nav {
         outline: none;
         width: 6.5rem;
         border-radius: 10px;
+<<<<<<< HEAD
+        color: white;
+=======
         color: rgb(0, 0, 0);
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
         background-color: var(--accent);
         padding: 0.6rem 0;
       }
@@ -237,6 +275,49 @@ nav {
 }
 
 .courseSection {
+<<<<<<< HEAD
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 2px 4px rgb(138, 138, 138);
+  padding: 1rem;
+  gap: 2rem;
+  .image {
+    img {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 5px;
+    }
+  }
+  .courseDetails {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: white;
+
+    .courseTitleDesc {
+      margin-bottom: 10px;
+      h2 {
+        font-size: 1.9rem;
+        color: var(--secondary);
+        font-weight: 700;
+      }
+      #courseDesc {
+        color: #7f7f7f;
+        font-size: 1.4rem;
+      }
+    }
+
+    .benefits {
+      margin-bottom: 15px;
+      h3 {
+        font-size: 1.2rem;
+        color: var(--secondary);
+        margin-bottom: 5px;
+=======
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,7 +485,60 @@ footer {
             max-width: 100%;
           }
         }
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
+      }
+      ol {
+        padding-left: 1rem;
+        li {
+          color: var(--accent);
+          list-style: decimal;
+          border-radius: 10px;
+          padding: 0.3rem;
+        }
       }
     }
+    .courseDuration {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      img {
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+      p {
+        font-size: 1.2rem;
+        color: var(--accent);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.learningModel {
+  // border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  .progress {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+footer {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  h1 {
+    color: red;
   }
 }

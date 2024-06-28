@@ -1,5 +1,43 @@
 :root {
   --primary: #f2f4f6;
+<<<<<<< HEAD
+  --secondary: #5f00ba;
+  --accent: #007bff;
+}
+.coursePage {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  .mainCourse {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    img {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    .coursePageTitle {
+      text-align: center;
+      font-weight: 500;
+      .coursePageMainTitle {
+        font-size: 5rem;
+        font-weight: bold;
+        color: var(--secondary);
+      }
+      .coursePageSubtitle {
+        font-size: 1.5rem;
+        span {
+          color: var(--accent);
+        }
+      }
+    }
+  }
+=======
   --secondary: #007bffe2;
   --accent: #ffffff;
 }
@@ -8,6 +46,7 @@
   flex-direction: column;
   gap: 1rem;
   padding-top: 15vh;
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
   .cardSection {
     gap: 1rem;
     display: flex;
@@ -15,7 +54,11 @@
     flex-direction: column;
     .subtitle {
       text-align: center;
+<<<<<<< HEAD
+      font-size: 2rem;
+=======
       font-size: 3rem;
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
       color: var(--secondary);
       font-weight: 500;
     }
@@ -28,6 +71,11 @@
     }
   }
   .allCourseSection {
+<<<<<<< HEAD
+    margin-top: 2rem;
+    height: 100vh;
+=======
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -36,6 +84,8 @@
     }
   }
 }
+<<<<<<< HEAD
+=======
 @media screen and (width<600px) {
   .coursePage {
     flex-direction: column;
@@ -53,3 +103,4 @@
     }
   }
 }
+>>>>>>> c7f7016871ad4c106b686c0d206e7e2178efadba

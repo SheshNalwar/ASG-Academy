@@ -1,4 +1,5 @@
 import "../css/homepage.scss";
+import "../css/homepage.scss";
 
 const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage = () => {
         <p>The world-leading platform with successful lessons.</p>
       </div>
       <div className="faculty">
+        <div className="bgdiv2"></div>
         <img className="faculty-1-icon" alt="" src="icon8-account-50.pn" />
         <h3 id="title">Our Professional Teachers</h3>
         <div className="facultyDetails">
@@ -80,13 +82,15 @@ const HomePage = () => {
 
         <div className="experience-content">
           <h3 id="text3">Welcome To ASG Academay</h3>
-          <p>
-            The ASG ACADEMY is into Skill Development Student Programs for
-            school Children. We provide the most appropriate and unique set of
-            programs and courses designed by our team of experts for overall
-            creative, academic, personality and intellectual growth in your
-            child at the right stage and age of learning.
-          </p>
+          <text >
+          The ASG ACADEMY is into Skill Development
+          Student Programs for school Children. We provide 
+          the most appropriate and unique set of programs
+          and courses designed by our team of experts for 
+          overall creative, academic, personality and
+          intellectual growth in your child at the right 
+          stage and age of learning.
+          </text>
           <button className="about-us1">About Us</button>
         </div>
 
@@ -97,6 +101,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        
       </div>
 
       <div className="Services">
@@ -117,35 +122,28 @@ const HomePage = () => {
       </div>
       <div className="child1-service">
         <h1 className="abacus">Skilled Lecturers</h1>
-        <p className="textab">
-          Lectures can present large amounts of information,large audiences.
-          Lecturers can model how professionals work through disciplinary
-          questions or problems.
-        </p>
+        <text className="textab">
+        Lectures can present large amounts of information,large audiences. Lecturers can model how professionals work through disciplinary questions or problems. 
+        </text>
       </div>
       <div className="child2-service">
         <h1 className="vedic">Online Classes</h1>
-        <p className="textvedic">
-          Online courses teach students how to manage their time better since
-          the student bears the responsibility of engaging with the course
-          instead of simply showing up to class on an assigned day and time.
-        </p>
+        <text className="textvedic">
+        Online courses teach students how to manage their time better since the student bears the responsibility of engaging with the course instead of simply showing up to class on an assigned day and time. 
+        </text>
       </div>
       <div className="child3-service">
         <h1 className="Phonics">24/7 Support</h1>
-        <p className="textphonics">
-          Fast and responsive customer support can prevent minor issues from
-          escalating into major concerns
-        </p>
+        <text className="textphonics">
+          Fast and responsive customer support can prevent minor issues from escalating into major concerns
+        </text>
       </div>
       <div className="child4-service">
         <h1 className="Hands-on training">Hands on Training</h1>
-        <p className="handson">
-          Hands-on learning increases student engagement and knowledge
-          retention. It fosters the development of problem-solving and critical
-          thinking skills. It allows for the physical creation of tangible
-          outcomes.
-        </p>
+          <text className="handson">
+          Hands-on learning increases student engagement and knowledge retention. It fosters the development of problem-solving and critical thinking skills. It allows for the physical creation of tangible outcomes.
+          </text>
+
       </div>
       <div className="footer">
         <h1 className="footer-title">
