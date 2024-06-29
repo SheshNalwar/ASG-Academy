@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../utils/schema.js";
 import "../css/achievements.scss";
+import Loader from "../components/Loader/Loader.jsx";
 
 const ListItem = ({ imageSrc, title, description }) => (
   <div className="list-item">
@@ -29,7 +30,7 @@ const List = ({ items }) => (
 
 const Achievements = () => {
   const [achievements, setAchievements] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchAchievements = async () => {
       try {
@@ -42,20 +43,24 @@ const Achievements = () => {
             }
           }
         }`);
-        const formattedData = data.map(item => ({
+        const formattedData = data.map((item) => ({
           title: item.title,
           description: item.description,
-          imageSrc: item.image ? item.image.asset.url : '',
+          imageSrc: item.image ? item.image.asset.url : "",
         }));
         setAchievements(formattedData);
       } catch (error) {
         console.error("Error fetching achievements:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchAchievements();
   }, []);
-
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <div className="achievementsPage">
       <div className="mainTitle">

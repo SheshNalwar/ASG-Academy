@@ -1,5 +1,5 @@
 import { CourseSection, CoursesCard, Footer } from "../Index.js";
-import { courses } from "../utils/Data.js";
+import courses from "../utils/Data.js";
 import "../css/CoursePage.scss";
 const CoursesPage = () => {
   return (
