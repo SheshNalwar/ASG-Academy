@@ -123,6 +123,7 @@
       justify-content: center;
       gap: 3vw;
       .card {
+        cursor: pointer;
         height: 60vh;
         width: 20vw;
         padding: 0.5rem;
@@ -151,7 +152,7 @@
           font-weight: 600;
         }
         .teachers-subject {
-          font-size: 1.6vw;
+          font-size: clamp(1.4rem, 1.5641rem + -0.2051vw, 1.3rem);
         }
       }
     }
@@ -340,13 +341,13 @@
           0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
         .number {
           background-color: #89c5f7;
-          height: 8vh;
-          width: 4vw;
+          height: 2.3rem;
+          width: 2.5rem;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 2vw;
+          font-size: clamp(1.5rem, 1.6282rem + -0.4103vw, 1.3rem);
           font-weight: 700;
         }
 
@@ -631,12 +632,6 @@
           width: 85vw;
           position: static;
           padding: 3vh 5vw;
-
-          .number {
-            height: 8vh;
-            width: 18vw;
-            font-size: 8vw;
-          }
 
           h3 {
             font-size: 8vw;
