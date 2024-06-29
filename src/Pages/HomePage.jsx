@@ -1,162 +1,125 @@
 import "../css/homepage.scss";
-import "../css/homepage.scss";
+import React from 'react'
+import { Footer } from '../Index.js'
 
-const HomePage = () => {
+function HomePage() {
   return (
     <>
-      <div className="Hompage">
-        <div className="bgDiv"></div>
-        <img className="Homepage-1-child" alt="" src="alex.jpg" />
-        <img className="Homepage-2-child" alt="" src="monica.jpg" />
-        <img className="Homepage-3-child" alt="" src="darshan.jpg" />
-        <img className="Homepage-4-child" alt="" src="chris.jpg" />
-        {/* <div className="Homepage-1-item" /> */}
 
-        <input
-          className="search-course"
-          placeholder="Search for courses"
-        ></input>
-        <div className="circle-1-child"></div>
-        <div className="circle-2-child"></div>
-        <div className="circle-3-child"></div>
-        <div className="circle-4-child"></div>
-      </div>
-      <div className="Home-content">
-        <h3 id="text1">Welcome To</h3>
-        <h3 id="heading">ASG Academy</h3>
-        <h1 id="text2">Learn With The Best School.</h1>
-        <p>The world-leading platform with successful lessons.</p>
-      </div>
-      <div className="faculty">
-        <div className="bgdiv2"></div>
-        <img className="faculty-1-icon" alt="" src="icon8-account-50.pn" />
-        <h3 id="title">Our Professional Teachers</h3>
-        <div className="facultyDetails">
-          <div className="coursecard">
-            <div className="image">
-              <img src="alex.jpg" alt="" />
-            </div>
-            <div className="courseDetails">
-              <h3>Teacher</h3>
-              <p className="courseDescription">ASG academy</p>
-              <p className="courseDuration">Duration:</p>
-            </div>
+      <div className="homepage">
+        <div className="landingPage">
+          <div className="landing-img">
+            <img className="left left-img1" src="alex.jpg" alt="" />
+            <img className="left left-img2 " src="chris.jpg" alt="" />
+            <img className="right right-img1" src="darshan.jpg" alt="" />
+            <img className="right right-img2" src="monica.jpg" alt="" />
           </div>
+          <div className="landing-intro">
+            <h1>ASG Academy </h1>
+            <h3>Learn With The Best School.</h3>
+            <p>"Explore limitless learning possibilities at ASG Academy, offering curated content and interactive resources for students and educators alike."</p>
 
-          <div className="coursecard">
-            <div className="image">
-              <img src="alex.jpg" alt="" />
-            </div>
-            <div className="courseDetails">
-              <h3>Teacher</h3>
-              <p className="courseDescription">ASG academy</p>
-              <p className="courseDuration">Duration:</p>
-            </div>
-          </div>
-
-          <div className="coursecard">
-            <div className="image">
-              <img src="alex.jpg" alt="" />
-            </div>
-            <div className="courseDetails">
-              <h3>Teacher</h3>
-              <p className="courseDescription">ASG academy</p>
-              <p className="courseDuration">Duration:</p>
-            </div>
-          </div>
-
-          <div className="coursecard">
-            <div className="image">
-              <img src="alex.jpg" alt="" />
-            </div>
-            <div className="courseDetails">
-              <h3>Teacher</h3>
-              <p className="courseDescription">ASG academy</p>
-              <p className="courseDuration">Duration:</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="Experience">
-        {/* <div className="bg-dark"></div> */}
-
-        <div className="experience-content">
-          <h3 id="text3">Welcome To ASG Academay</h3>
-          <text >
-            The ASG ACADEMY is into Skill Development
-            Student Programs for school Children. We provide
-            the most appropriate and unique set of programs
-            and courses designed by our team of experts for
-            overall creative, academic, personality and
-            intellectual growth in your child at the right
-            stage and age of learning.
-          </text>
-          <button className="about-us1">About Us</button>
-        </div>
-
-        <div className="exp-img">
-          <div className="exp1">
-            <div className="exp2">
-              <img className="exp3" src="alex.jpg" alt="" />
-            </div>
+            <button>About Us</button>
           </div>
         </div>
 
-      </div>
+        <div className="teachers">
 
-      <div className="Services">
-        <div className="service-content">
-          <h3 id="text4">What We Provide To You</h3>
-          <p>
-            By enrolling your child in ASG Academy programs,<br></br>
-            you can rest assured that they will receive the <br></br>
-            guidance and support needed to thrive academically,<br></br>
-            creatively, and personally. Our commitment to <br></br>
-            excellence ensures that each child receives a tailored <br></br>
-            learning experience that equips them with the skills,<br></br>
-            knowledge, and confidence to succeed
-            <br></br> in an ever-changing world.
-          </p>
-          <button className="about-us2">About Us</button>
+          <div className="teachers-title">
+            <img alt="" src="teacher icon.webp" />
+            <h1>Our Professional Teachers</h1>
+            <p>We provide the best service that comes with the best results.</p>
+          </div>
+          <div className="teachers-card">
+            <div className="card">
+
+              <img src="alex.jpg" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellat optio? Similique</p>
+              <p className="teachers-subject">Subject: Maths </p>
+            </div>
+            <div className="card">
+              <img src="alex.jpg" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellat optio? Similique</p>
+              <p className="teachers-subject">Subject: Maths </p>
+            </div>
+            <div className="card">
+              <img src="alex.jpg" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellat optio? Similique</p>
+              <p className="teachers-subject">Subject: Maths </p>
+            </div>
+            <div className="card">
+              <img src="alex.jpg" alt="" />
+              <h3>Name</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellat optio? Similique</p>
+              <p className="teachers-subject">Subject: Maths </p>
+            </div>
+          </div>
+
         </div>
-      </div>
-      <div className="child1-service">
-        <h1 className="abacus">Skilled Lecturers</h1>
-        <text className="textab">
-          Lectures can present large amounts of information,large audiences. Lecturers can model how professionals work through disciplinary questions or problems.
-        </text>
-      </div>
-      <div className="child2-service">
-        <h1 className="vedic">Online Classes</h1>
-        <text className="textvedic">
-          Online courses teach students how to manage their time better since the student bears the responsibility of engaging with the course instead of simply showing up to class on an assigned day and time.
-        </text>
-      </div>
-      <div className="child3-service">
-        <h1 className="Phonics">24/7 Support</h1>
-        <text className="textphonics">
-          Fast and responsive customer support can prevent minor issues from escalating into major concerns
-        </text>
-      </div>
-      <div className="child4-service">
-        <h1 className="Hands-on training">Hands on Training</h1>
-        <text className="handson">
-          Hands-on learning increases student engagement and knowledge retention. It fosters the development of problem-solving and critical thinking skills. It allows for the physical creation of tangible outcomes.
-        </text>
 
-      </div>
-      <div className="footer">
-        <h1 className="footer-title">
-          Let's find best<br></br> course for you
-        </h1>
-        <h2 className="footerNav1">Home</h2>
-        <h2 className="footerNav2">AboutUs</h2>
-        <h2 className="footerNav3">Courses</h2>
-        <h2 className="footerNav4">Gallery</h2>
-        <button className="footercontact">Contact Us</button>
+        <div className="experience">
+          <div className="experience-images">
+            <div className="black"></div>
+            <div className="blue"></div>
+            <img src="phonics.jpeg" alt="" />
+
+            <div className="grey">
+              <div className="white">
+                <h1>12</h1>
+                <p>Years
+                  Experience
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="experience-content">
+            <h1>Welcome To <span>ASG Academy</span> </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum molestiae fugiat reprehenderit amet est pariatur, excepturi rem, necessitatibus doloremque magnam at ipsa nesciunt consequuntur error? Aliquam harum a totam!</p>
+            <button>About Us</button>
+          </div>
+        </div>
+
+        <div className="services">
+          <div className="services-content">
+            <p className="services-title">Our Services</p>
+            <h1>What We Provide To You</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere cumque nisi, laboriosam, accusantium tenetur reiciendis incidunt ipsam animi iure optio in fuga est tempora ab, sint mollitia aliquam doloremque?</p>
+            <button>View More</button>
+          </div>
+          <div className="services-cards">
+
+            <div className="card card1">
+              <div className="number">1</div>
+              <h3>Skilled Lectures</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore</p>
+            </div>
+            <div className="card card2">
+              <div className="number">2</div>
+              <h3>Mentorship</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore</p>
+            </div>
+            <div className="card card3">
+              <div className="number">3</div>
+              <h3>Online Classes</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore</p>
+            </div>
+            <div className="card card4">
+              <div className="number">4</div>
+              <h3>24/7 Support</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore</p>
+            </div>
+
+          </div>
+        </div>
+
+        <Footer />
+
       </div>
     </>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
