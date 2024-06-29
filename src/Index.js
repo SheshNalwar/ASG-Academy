@@ -19,9 +19,15 @@ import CoursesCard from "./components/Course/CoursesCard";
 import Footer from "./components/Footer";
 import ContactUsBtn from "./components/ContactUsBtn";
 import Loader from "./components/Loader/Loader";
+import TeacherCard from "./components/TeacherCard";
+import ServicesCard from "./components/ServicesCard";
+import AboutUsBtn from "./components/AboutUsBtn";
 
 // Exportation :
 export {
+  AboutUsBtn,
+  ServicesCard,
+  TeacherCard,
   Loader,
   ContactUsBtn,
   NavLinkRoutes,

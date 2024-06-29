@@ -1,12 +1,11 @@
 .homepage {
-
   height: auto;
   width: 100%;
 
   .landingPage {
     height: 150vh;
     width: 100%;
-    background: linear-gradient(to right, #E3F2FD 0%, #89c5f7 100%);
+    background: linear-gradient(to right, #e3f2fd 0%, #89c5f7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,8 +52,6 @@
         top: 90%;
         left: 25%;
       }
-
-
     }
 
     .landing-intro {
@@ -79,7 +76,6 @@
         line-height: 1.5;
         font-weight: 600;
       }
-
       button {
         margin-top: 2vh;
         text-decoration: none;
@@ -94,22 +90,18 @@
       }
     }
   }
-
   .teachers {
     height: 100vh;
     width: 100%;
-
     .teachers-title {
       height: 30vh;
       width: 100%;
       text-align: center;
       margin-top: 10vh;
-
       img {
-        height: 7vh;
-        width: 3.5vw;
+        height: 3rem;
+        width: 3rem;
       }
-
 
       h1 {
         margin-top: 2vh;
@@ -123,7 +115,6 @@
         font-weight: 600;
       }
     }
-
     .teachers-card {
       height: 70vh;
       width: 100%;
@@ -131,16 +122,17 @@
       align-items: center;
       justify-content: center;
       gap: 3vw;
-      // border: 2px solid black;
-
       .card {
         height: 60vh;
         width: 20vw;
+        padding: 0.5rem;
         background-color: #007bffe2;
         border-radius: 20px;
-        text-align: center;
         color: white;
-
+        text-align: center;
+        box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+          0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+          0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
         img {
           height: 25vh;
           width: 12.5vw;
@@ -149,25 +141,18 @@
           border-radius: 50%;
           border: 4px solid white;
         }
-
-        img:hover {
-          border: 4px solid black;
-        }
-
         h3 {
           margin-top: 2vh;
-          font-size: 1.6vw;
+          font-size: 2vw;
         }
-
         p {
           margin-top: 2vh;
           font-size: 1.2vw;
           font-weight: 600;
         }
-
-        // .teachers-subject {
-        //   color: #007bffe2;
-        // }
+        .teachers-subject {
+          font-size: 1.6vw;
+        }
       }
     }
   }
@@ -178,7 +163,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 
     .experience-images {
       height: 100vh;
@@ -234,7 +218,7 @@
           text-align: center;
 
           h1 {
-            font-size: 3vw;
+            font-size: 2vw;
             color: #007bff;
           }
 
@@ -271,7 +255,6 @@
         line-height: 1.4;
       }
 
-
       button {
         margin-top: 2vh;
         text-decoration: none;
@@ -284,9 +267,6 @@
         border-radius: 50px;
         cursor: pointer;
       }
-
-
-
     }
   }
 
@@ -338,7 +318,6 @@
         border-radius: 50px;
         cursor: pointer;
       }
-
     }
 
     .services-cards {
@@ -356,7 +335,9 @@
         border-radius: 10px;
         padding: 2vw;
         color: white;
-
+        box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+          0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+          0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
         .number {
           background-color: #89c5f7;
           height: 8vh;
@@ -405,23 +386,16 @@
         left: 47%;
       }
     }
-
   }
-
 }
 
-
 @media screen and (width<600px) {
-
-
-
   .homepage {
-
     .landingPage {
       height: 110vh;
       width: 100%;
       flex-direction: column;
-      background: linear-gradient(to bottom, #E3F2FD 0%, #89c5f7 100%);
+      background: linear-gradient(to bottom, #e3f2fd 0%, #89c5f7 100%);
 
       .landing-img {
         width: 100%;
@@ -479,7 +453,6 @@
           vertical-align: middle;
         }
       }
-
     }
 
     .teachers {
@@ -506,15 +479,12 @@
         p {
           font-size: 4.5vw;
         }
-
       }
-
 
       .teachers-card {
         height: 170vh;
         width: 100%;
         flex-direction: column;
-
 
         .card {
           height: 40vh;
@@ -548,7 +518,6 @@
       width: 100%;
       flex-direction: column;
       margin-top: 10vh;
-
 
       .experience-images {
         height: 50vh;
@@ -613,7 +582,6 @@
           text-align: center;
           vertical-align: middle;
         }
-
       }
     }
 
@@ -626,7 +594,6 @@
       .services-content {
         height: 50vh;
         width: 100%;
-
 
         h1 {
           margin-top: 2vh;
@@ -649,7 +616,6 @@
           text-align: center;
           vertical-align: middle;
         }
-
       }
 
       .services-cards {
@@ -680,11 +646,7 @@
             font-size: 4.5vw;
           }
         }
-
-
       }
     }
-
   }
-
 }
