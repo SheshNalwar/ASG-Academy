@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../utils/schema.js";
+import { Loader } from "../Index.js";
 import "../css/GalleryPage.scss";
-import Loader from "../components/Loader/Loader.jsx";
 const GalleryPage = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);

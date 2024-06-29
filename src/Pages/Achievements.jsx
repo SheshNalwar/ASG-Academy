@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { client } from "../utils/schema.js";
+import { Loader } from "../Index.js";
 import "../css/achievements.scss";
-import Loader from "../components/Loader/Loader.jsx";
 
 const ListItem = ({ imageSrc, title, description }) => (
   <div className="list-item">

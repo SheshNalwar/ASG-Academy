@@ -18,9 +18,11 @@ import CoursesCard from "./components/Course/CoursesCard";
 // Other Components :
 import Footer from "./components/Footer";
 import ContactUsBtn from "./components/ContactUsBtn";
+import Loader from "./components/Loader/Loader";
 
 // Exportation :
 export {
+  Loader,
   ContactUsBtn,
   NavLinkRoutes,
   NavLinks,
