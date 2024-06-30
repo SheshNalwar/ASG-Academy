@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { client } from "../utils/schema.js";
-import { Loader } from "../Index.js";
+import { Loader, Footer } from "../Index.js";
 import "../css/achievements.scss";
 
 const ListItem = ({ imageSrc, title, description }) => (
@@ -67,6 +67,7 @@ const Achievements = () => {
         <h1>Achievements</h1>
       </div>
       <List items={achievements} />
+      <Footer/>
     </div>
   );
 };

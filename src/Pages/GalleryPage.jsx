@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { client } from "../utils/schema.js";
-import { Loader } from "../Index.js";
+import { Loader, Footer } from "../Index.js";
 import "../css/GalleryPage.scss";
 const GalleryPage = () => {
   const [data, setData] = useState([]);
@@ -52,6 +52,7 @@ const GalleryPage = () => {
             </div>
           ))}
       </div>
+      <Footer />
     </div>
   );
 };
