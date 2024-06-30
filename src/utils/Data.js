@@ -2,7 +2,7 @@ const courses = [
   {
     id: "1",
     levels: "Foundation + 8 Levels",
-    imgsrc: "abacus.jpeg",
+    imgsrc: "https://cdn.usegalileo.ai/sdxl10/f44ed0be-03e7-4d0d-bee2-a55d7c893987.png",
     title: "Abacus ",
     ageGroup: "6 to 15 Years",
     duration: "2 to 3 Months",
@@ -37,7 +37,7 @@ const courses = [
   {
     id: "2",
     levels: "No Levels",
-    imgsrc: "handwriting.jpeg",
+    imgsrc: "https://cdn.usegalileo.ai/sdxl10/40bffa6a-01e9-49ea-87d9-b92ec71ca249.png",
     title: "Handwriting ",
     ageGroup: "6 to 15 Years",
     duration: "25 Classes",
@@ -73,7 +73,7 @@ const courses = [
     id: "3",
     levels: "8 Levels",
     ageGroup: "6 to 18 Years",
-    imgsrc: "maths.jpeg",
+    imgsrc: "https://cdn.usegalileo.ai/sdxl10/4de36b04-5e04-41d1-9c0a-8cc6e39bf3fe.png",
     title: "Vedic Mathematics",
     duration: "2 to 3 months",
     targetId: "vedic-maths",
@@ -142,7 +142,7 @@ const courses = [
   {
     id: "5",
     levels: "No Levels",
-    imgsrc: "grammar.jpeg",
+    imgsrc: "https://cdn.usegalileo.ai/sdxl10/efe67051-1f77-4e7b-802a-ff67da7b0b0c.png",
     title: "Grammar",
     ageGroup: "6 to 18 Years",
     duration: "4 to 5 months",
@@ -177,7 +177,7 @@ const courses = [
   {
     id: "6",
     levels: "8 Levels",
-    imgsrc: "abacus.jpeg",
+    imgsrc: "https://cdn.usegalileo.ai/sdxl10/28ee9c12-e50e-4007-adc2-e3c49059b654.png",
     title: "Finger (Hand) Abacus",
     ageGroup: "6 to 15 Years",
     duration: "2 to 3 months",

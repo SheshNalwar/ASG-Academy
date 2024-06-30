@@ -14,10 +14,11 @@ function CourseSection({ courseData }) {
                 alt={courseData.title}
                 className="image"
               />
+              <div className="courseTitle">
+                <p>{courseData.title}</p>
+              </div>
             </div>
-            <div className="intro-container">
-              <p className="intro-title">{courseData.title}</p>
-            </div>
+            <div className="intro-container"></div>
             <div className="stats-container">
               <CourseStats
                 courseData={courseData.duration}

@@ -23,7 +23,7 @@ const CoursesCard = ({
         <h3>{title}</h3>
         <p className="ageGroup">Age Group : {ageGroup}</p>
         <div className="duration">
-          <img src="duration-white.png" alt="" />
+          <img src="duration.png" alt="" />
           <p className="courseDuration">{duration}</p>
         </div>
         <div className="viewMoreDiv">
