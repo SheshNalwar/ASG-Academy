@@ -1,32 +1,45 @@
+import { Link } from "react-router-dom";
+import { ContactUsBtn, NavLinks } from "../Index.js";
 import "../css/Components.scss";
-import { ContactUsBtn, NavLinks, AboutUsBtn } from "../Index.js"
+
+import icons from "/Icons.svg";
 const Footer = () => {
   return (
     <>
       <footer>
-
         <div className="footer-top">
-          <div className="footer-left">
-            <h1>Learn With The Best School.</h1>
-            <ContactUsBtn />
-          </div>
           <div className="footer-right">
             <div className="footer-links">
               <NavLinks />
+              <ContactUsBtn btnId="footerContactUs"/>
             </div>
-
             <div className="footer-media">
-              {/* <a href="" className="media">In</a> */}
-              <a href="https://www.facebook.com/shweta.gadwal.7?mibextid=ZbWKwL" className="media">Fb</a>
-              <a href="https://www.instagram.com/asgacademy_by_shweetasgadwal/" className="media">In</a>
+              <Link
+                to="https://www.facebook.com/shweta.gadwal.7?mibextid=ZbWKwL"
+                className="media"
+                target="_blank"
+              >
+                <svg className="icon">
+                  <use xlinkHref={`${icons}#Facebook`}></use>
+                </svg>
+              </Link>
+              <Link
+                to="https://www.instagram.com/asgacademy_by_shweetasgadwal/"
+                className="media"
+                target="_blank"
+              >
+                <svg className="icon">
+                  <use xlinkHref={`${icons}#Instagram`}></use>
+                </svg>
+              </Link>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          @ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, tempora architecto quam nobis libero
+          @ Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          tempora architecto quam nobis libero
         </div>
-
       </footer>
     </>
   );
