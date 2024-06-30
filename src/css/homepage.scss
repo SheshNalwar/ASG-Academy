@@ -3,85 +3,95 @@
   width: 100%;
 
   .landingPage {
-    height: 150vh;
+    height: 110vh;
     width: 100%;
-    background: linear-gradient(to right, #e3f2fd 0%, #89c5f7 100%);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 
-    .landing-img {
-      width: 50%;
-      height: 100%;
+    .elements {
+      height: 30vh;
+      width: 15vw;
+      position: absolute;
+      object-fit: cover;
+    }
 
-      img {
-        height: 40vh;
-        width: 20vw;
-        object-fit: cover;
-        position: absolute;
-      }
+    .element1 {
+      bottom: 15%;
+      left: 10%;
+      z-index: -1;
+    }
 
-      .left {
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        border-top-left-radius: 50%;
-      }
+    .element2 {
+      top: 25%;
+      right: 20%;
+      z-index: -1;
+    }
 
-      .right {
-        border-top-right-radius: 50%;
-        border-bottom-left-radius: 50%;
-        border-top-left-radius: 50%;
-      }
 
-      .left-img1 {
-        top: 20%;
-        left: 5%;
-      }
+    .heading {
+      height: 30vh;
+      width: 100%;
+      text-align: center;
+      font-weight: 300;
 
-      .left-img2 {
-        top: 70%;
-        left: 5%;
-      }
+      p {
 
-      .right-img1 {
-        top: 45%;
-        left: 25%;
-      }
-
-      .right-img2 {
-        top: 90%;
-        left: 25%;
+        font-size: 12vw;
+        text-transform: uppercase;
+        color: #004BFF;
       }
     }
 
-    .landing-intro {
-      height: 100%;
-      width: 50%;
-      padding: 0 5vw;
+    .landing-images {
+      height: 50vh;
+      width: 30vw;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      h1 {
-        margin-top: 40vh;
-        font-size: 5vw;
+      .boy {
+        height: 50vh;
+        width: 35vw;
+        position: absolute;
+        top: -15%;
+        object-fit: cover;
       }
 
-      h3 {
-        font-size: 2.5vw;
-        margin-top: 2vh;
-        color: #007bff;
-      }
+
+    }
+
+    .landing-description {
+      height: 20vh;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      margin-top: -5vh;
 
       p {
-        margin-top: 2vh;
-        font-size: 1.3vw;
-        line-height: 1.5;
-        font-weight: 600;
+        font-size: 1.5vw;
+        font-weight: 500;
+
+        span {
+          color: #004BFF;
+        }
       }
 
       button {
-        margin-top: 2vh;
-
+        border: none;
+        padding: 2vh 3vw;
+        background-color: #004BFF;
+        border-radius: 10px;
+        font-size: 1.2vw;
+        font-weight: 600;
+        color: white;
+        margin-top: 3vh;
       }
     }
+
   }
 
   .teachers {
@@ -397,65 +407,70 @@
 @media screen and (width<600px) {
   .homepage {
     .landingPage {
-      height: 110vh;
+      height: 80vh;
       width: 100%;
-      flex-direction: column;
-      background: linear-gradient(to bottom, #e3f2fd 0%, #89c5f7 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15vh;
 
-      .landing-img {
+      .elements {
+        height: 12vh;
+        width: 30vw;
+      }
+
+      .element1 {
+        bottom: 0%;
+        left: 0%;
+      }
+
+      .element2 {
+        top: 35%;
+        right: 0%;
+      }
+
+      .heading {
+        margin-top: 12vh;
+        height: 10vh;
         width: 100%;
-        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding: 0 2vw;
 
-        img {
-          height: 18vh;
-          width: 40vw;
-        }
-
-        .left-img1 {
-          top: 12%;
-          left: 10%;
-        }
-
-        .left-img2 {
-          top: 37%;
-          left: 10%;
-        }
-
-        .right-img1 {
-          top: 20%;
-          left: 52%;
-        }
-
-        .right-img2 {
-          top: 45%;
-          left: 52%;
+        p {
+          font-size: 15vw;
+          font-weight: 400;
         }
       }
 
-      .landing-intro {
-        height: 50%;
+      .landing-images {
+        height: 25vh;
         width: 100%;
-        padding: 0 10vw;
-        text-align: center;
 
-        h1 {
-          margin-top: 15vh;
-          font-size: 12vw;
+        .boy {
+          height: 25vh;
+          width: 80vw;
+          top: -8%;
         }
+      }
 
-        h3 {
-          font-size: 6vw;
-        }
+      .landing-description {
+        height: 10vh;
+        width: 100%;
+        margin-top: 0;
+
 
         p {
           font-size: 4.5vw;
+          padding: 0 15vw;
         }
 
         button {
           padding: 2vh 10vw;
-          font-size: 4vw;
-          text-align: center;
-          vertical-align: middle;
+          font-size: 4.5vw;
+          font-weight: 400;
+          border-radius: 50px;
         }
       }
     }

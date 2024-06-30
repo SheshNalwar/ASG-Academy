@@ -6,23 +6,24 @@ function HomePage() {
     <>
       <div className="homepage">
         <div className="landingPage">
-          <div className="landing-img">
-            <img className="left left-img1" src="chris.jpg" alt="chris" />
-            <img className="left left-img2 " src="chris.jpg" alt="chris" />
-            <img className="right right-img1" src="darshan.jpg" alt="darshan" />
-            <img className="right right-img2" src="monica.jpg" alt="monica" />
+
+          <img className="elements element1" src="element1.png" alt="" />
+          <img className="elements element2" src="element 2.png" alt="" />
+          <div className="heading">
+            <p>L e a r n i n g</p>
           </div>
-          <div className="landing-intro">
-            <h1>ASG Academy </h1>
-            <h3>Learn With The Best School.</h3>
-            <p>
-              "Explore limitless learning possibilities at ASG Academy, offering
-              curated content and interactive resources for students and
-              educators alike."
-            </p>
+
+          <div className="landing-images">
+            <img className="boy" src="Boy.png" alt="Boy" />
+
+          </div>
+
+          <div className="landing-description">
+            <p>NURTURING <span>MINDS</span>, PROSPERING FUTURE</p>
             <AboutUsBtn />
           </div>
         </div>
+
         <div className="teachers">
           <div className="teachers-title">
             <img alt="" src="teacher-icon.png" />
