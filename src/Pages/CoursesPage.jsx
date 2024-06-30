@@ -1,7 +1,15 @@
-import { CourseSection, CoursesCard, Footer } from "../Index.js";
+import { CourseSection, CoursesCard, Footer, Loader } from "../Index.js";
 import courses from "../utils/Data.js";
+import { useState } from "react";
 import "../css/CoursePage.scss";
 const CoursesPage = () => {
+  const [loading, setLoading] = useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 1000);
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <>
       <div className="coursePage">

@@ -1,25 +1,37 @@
-import { AboutUsBtn, Footer, ServicesCard, TeacherCard } from "../Index.js";
+import { useState } from "react";
+import {
+  AboutUsBtn,
+  Footer,
+  ServicesCard,
+  TeacherCard,
+  Loader,
+} from "../Index.js";
 import "../css/homepage.scss";
 
 function HomePage() {
+  const [loading, setLoading] = useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 1000);
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <>
       <div className="homepage">
         <div className="landingPage">
-
           <img className="elements element1" src="element1.png" alt="" />
           <img className="elements element2" src="element 2.png" alt="" />
           <div className="heading">
             <p>L e a r n i n g</p>
           </div>
-
           <div className="landing-images">
             <img className="boy" src="Boy.png" alt="Boy" />
-
           </div>
-
           <div className="landing-description">
-            <p>NURTURING <span>MINDS</span>, PROSPERING FUTURE</p>
+            <p>
+              NURTURING <span>MINDS</span>, PROSPERING FUTURE
+            </p>
             <AboutUsBtn />
           </div>
         </div>
