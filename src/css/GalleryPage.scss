@@ -35,15 +35,18 @@
 
     .galleryContainer {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
-        padding: 3rem;
+        padding: 5vw;
         // margin-top: 40vh;
 
         .galleryImage {
             height: 50vh;
-            width: 40vw;
+            width: 35vw;
             margin: 6vh;
             border-radius: 10px;
+
             .imgTitle {
                 text-align: center;
                 font-weight: 500;
