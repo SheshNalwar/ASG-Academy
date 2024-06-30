@@ -59,7 +59,7 @@ function HomePage() {
               rem, necessitatibus doloremque magnam at ipsa nesciunt
               consequuntur error? Aliquam harum a totam!
             </p>
-            <AboutUsBtn />
+            {/* <AboutUsBtn /> */}
           </div>
         </div>
 
@@ -73,7 +73,7 @@ function HomePage() {
               incidunt ipsam animi iure optio in fuga est tempora ab, sint
               mollitia aliquam doloremque?
             </p>
-            <button>View More</button>
+            {/* <button>View More</button> */}
           </div>
           <div className="services-cards">
             <ServicesCard cardClass="card1" name="Skilled Lectures" count={1} />
