@@ -257,23 +257,43 @@ nav {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        position: relative;
+        .courseTitle {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          max-width: 350px;
+          height: 30%;
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.703),
+            transparent
+          );
+          display: flex;
+          align-items: center;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          p {
+            margin-left: 1rem;
+            color: white;
+            font-size: clamp(1.8rem, 1.6718rem + 0.4103vw, 2rem);
+            font-weight: bold;
+          }
+        }
         .image {
           background-color: #cbd5e1;
           height: 200px;
           width: 100%;
-          max-width: 400px;
+          max-width: 350px;
           border-radius: 10px;
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.703),
+            transparent
+          );
         }
       }
-      .intro-container {
-        text-align: center;
-        margin-bottom: 20px;
-        .intro-title {
-          font-size: clamp(2rem, 1.8397rem + 0.5128vw, 2.25rem);
-          font-weight: bold;
-          color: #000000c8;
-        }
-      }
+
       .stats-container {
         display: flex;
         flex-wrap: wrap;
@@ -322,6 +342,11 @@ nav {
           padding: 15px;
           border-radius: 10px;
           max-width: 20vw;
+          box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+            0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+            0 8px 8px hsl(0deg 0% 0% / 0.075),
+            0 16px 16px hsl(0deg 0% 0% / 0.075);
+
           .feature-icon {
             flex-shrink: 0;
             width: clamp(1.875rem, 1.4744rem + 1.2821vw, 2.4rem);
