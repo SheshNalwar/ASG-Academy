@@ -43,10 +43,9 @@ function HomePage() {
         duration: 1,
         opacity: 0,
       });
-      gsap.from(".experience-content h1", 1.8, {
-        y: 30,
-        duration: 1,
-        delay: 0.5,
+      gsap.from(".experience-content h1", 1.3, {
+        y: 50,
+        duration: 0.5,
         opacity: 0,
         scrollTrigger: {
           trigger: ".card",
@@ -55,11 +54,29 @@ function HomePage() {
           scroller: "body",
           end: "+=200",
           ease: "power1.inOut",
-          scrub: 1,
+          scrub: 0.5,
+        },
+      });
+
+      gsap.from(".experience-images", {
+        y: 60,
+        opacity: 0,
+        duration: 0.3,
+        scale: 0.89,
+        scrollTrigger: {
+          trigger: ".experience-images",
+          toggleActions: "play",
+          start: "top 400vh",
+          scroller: "body",
+          end: "+=200",
+          ease: "power1.inOut",
+          scrub: 0.5,
         },
       });
       gsap.from(".teachers-card .card, .teachers-title h1", 1.8, {
+        y: 60,
         opacity: 0,
+        duration: 0.3,
         scale: 0.89,
         scrollTrigger: {
           trigger: ".card",
@@ -68,9 +85,41 @@ function HomePage() {
           scroller: "body",
           end: "+=200",
           ease: "power1.inOut",
-          scrub: 1,
+          scrub: 0.5,
         },
       });
+
+      gsap.from(".services .services-content h1", 1.3, {
+        y: 50,
+        duration: 0.5,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".services",
+          toggleActions: "play",
+          start: "top 400vh",
+          scroller: "body",
+          end: "+=200",
+          ease: "power1.inOut",
+          scrub: 0.5,
+        },
+      });
+
+      gsap.from(".services .services-cards .card", 1.3, {
+        y: 80,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".services",
+          toggleActions: "play",
+          start: "top 200vh",
+          scroller: "body",
+          end: "+=200",
+          ease: "power1.inOut",
+          scrub: 0.5,
+        },
+      });
+
+
+
     }
   }, [loading]);
 
