@@ -82,7 +82,7 @@ function HomePage() {
         scrollTrigger: {
           trigger: ".experience-images",
           toggleActions: "play",
-          start: "top 400vh",
+          start: "top 300vh",
           scroller: "body",
           end: "+=200",
           ease: "power1.inOut",
@@ -90,14 +90,14 @@ function HomePage() {
         },
       });
       gsap.from(".teachers-card .card, .teachers-title h1", 1.8, {
-        y: 60,
-        opacity: 0,
+        y: 20,
+        opacity: 0.5,
         duration: 0.3,
         scale: 0.89,
         scrollTrigger: {
           trigger: ".card",
           toggleActions: "play",
-          start: "top 600vh",
+          start: "top 700vh",
           scroller: "body",
           end: "+=200",
           ease: "power1.inOut",
@@ -112,7 +112,7 @@ function HomePage() {
         scrollTrigger: {
           trigger: ".services",
           toggleActions: "play",
-          start: "top 400vh",
+          start: "top 200vh",
           scroller: "body",
           end: "+=200",
           ease: "power1.inOut",
