@@ -30,6 +30,22 @@ function HomePage() {
         opacity: 0,
         duration: 1,
       });
+
+      gsap.from(".landing-images .boy", 1.8, {
+        // y: 100,
+        ease: "power4.out",
+        delay: 0.5,
+        opacity: 0,
+        duration: 1,
+      });
+
+      gsap.from(".landing-description button", 1.8, {
+        y: 20,
+        ease: "power4.out",
+        delay: 0.5,
+        opacity: 0,
+        duration: 1,
+      });
       gsap.from(".element1, .element2", 1.8, {
         ease: "power4.out",
         delay: 0.5,
