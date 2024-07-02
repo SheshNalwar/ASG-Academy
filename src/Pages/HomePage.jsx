@@ -1,148 +1,122 @@
-import { useState, useRef, useEffect } from "react";
+import { AboutUsBtn, Footer, ServicesCard, TeacherCard } from "../Index.js";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import "../css/homepage.scss";
 import gsap from "gsap";
-import {
-  AboutUsBtn,
-  Footer,
-  ServicesCard,
-  TeacherCard,
-  Loader,
-} from "../Index.js";
 function HomePage() {
-  const [loading, setLoading] = useState(true);
   const container = useRef();
-
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-    return () => clearTimeout(timer);
+    window.scrollTo(0, 0);
   }, []);
   useGSAP(() => {
-    if (!loading) {
-      gsap.from(".heading", 1.8, {
-        y: 100,
-        ease: "power4.out",
-        delay: 0.5,
-        opacity: 0,
-        duration: 1,
-      });
-
-      gsap.from(".landing-images .boy", 1.8, {
-        // y: 100,
-        ease: "power4.out",
-        delay: 0.5,
-        opacity: 0,
-        duration: 1,
-      });
-
-      gsap.from(".landing-description button", 1.8, {
-        y: 20,
-        ease: "power4.out",
-        delay: 0.5,
-        opacity: 0,
-        duration: 1,
-      });
-      gsap.from(".element1, .element2", 1.8, {
-        ease: "power4.out",
-        delay: 0.5,
-        duration: 1,
-        opacity: 0,
-        rotation: 90,
-      });
-      gsap.from(".landing-description p", 1.8, {
-        y: 20,
-        delay: 0.5,
-        duration: 1,
-        opacity: 0,
-      });
-      gsap.from(".experience-content h1", 1.3, {
-        y: 50,
-        duration: 0.5,
-        opacity: 0,
-        scrollTrigger: {
-          trigger: ".card",
-          toggleActions: "play",
-          start: "bottom 300vh",
-          scroller: "body",
-          end: "+=200",
-          ease: "power1.inOut",
-          scrub: 0.5,
-        },
-      });
-
-      gsap.from(".experience-images", {
-        y: 60,
-        opacity: 0,
-        duration: 0.3,
-        scale: 0.89,
-        scrollTrigger: {
-          trigger: ".experience-images",
-          toggleActions: "play",
-          start: "top 300vh",
-          scroller: "body",
-          end: "+=200",
-          ease: "power1.inOut",
-          scrub: 0.5,
-        },
-      });
-      gsap.from(".teachers-card .card, .teachers-title h1", 1.8, {
-        y: 20,
-        opacity: 0.5,
-        duration: 0.3,
-        scale: 0.89,
-        scrollTrigger: {
-          trigger: ".card",
-          toggleActions: "play",
-          start: "top 700vh",
-          scroller: "body",
-          end: "+=200",
-          ease: "power1.inOut",
-          scrub: 0.5,
-        },
-      });
-
-      gsap.from(".services .services-content h1", 1.3, {
-        y: 50,
-        duration: 0.5,
-        opacity: 0,
-        scrollTrigger: {
-          trigger: ".services",
-          toggleActions: "play",
-          start: "top 200vh",
-          scroller: "body",
-          end: "+=200",
-          ease: "power1.inOut",
-          scrub: 0.5,
-        },
-      });
-
-      gsap.from(".services .services-cards .card", 1.3, {
-        y: 80,
-        opacity: 0,
-        scrollTrigger: {
-          trigger: ".services",
-          toggleActions: "play",
-          start: "top 200vh",
-          scroller: "body",
-          end: "+=200",
-          ease: "power1.inOut",
-          scrub: 0.5,
-        },
-      });
-
-
-
-    }
-  }, [loading]);
-
-  if (loading) {
-    return <Loader />;
-  }
-
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".heading", 1.8, {
+      y: 100,
+      ease: "power4.out",
+      delay: .5,
+      opacity: 0,
+      duration: 1,
+    });
+    gsap.from(".landing-images .boy", 1.8, {
+      // y: 100,
+      ease: "power4.out",
+      delay: .5,
+      opacity: 0,
+      duration: 1,
+    });
+    gsap.from(".landing-description button", 1.8, {
+      y: 20,
+      ease: "power4.out",
+      delay: .5,
+      opacity: 0,
+      duration: 1,
+    });
+    gsap.from(".element1, .element2", 1.8, {
+      ease: "power4.out",
+      delay: .5,
+      duration: 1,
+      opacity: 0,
+      rotation: 90,
+    });
+    gsap.from(".landing-description p", 1.8, {
+      y: 20,
+      delay: .5,
+      duration: 1,
+      opacity: 0,
+    });
+    gsap.from(".experience-content h1", 1.3, {
+      y: 50,
+      duration: .5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".card",
+        toggleActions: "play",
+        start: "bottom 300vh",
+        scroller: "body",
+        end: "+=200",
+        ease: "power1.inOut",
+        scrub: .5,
+      },
+    });
+    gsap.from(".experience-images", {
+      y: 60,
+      opacity: 0,
+      duration: 0.3,
+      scale: 0.89,
+      scrollTrigger: {
+        trigger: ".experience-images",
+        toggleActions: "play",
+        start: "top 500",
+        scroller: "body",
+        end: "+=200",
+        ease: "power1.inOut",
+        scrub: .5,
+      },
+    });
+    gsap.from(".teachers-card .card, .teachers-title h1", 1.8, {
+      y: 20,
+      opacity: .5,
+      duration: 0.3,
+      scale: 0.89,
+      scrollTrigger: {
+        trigger: ".card",
+        toggleActions: "play",
+        start: "top 700vh",
+        scroller: "body",
+        end: "+=200",
+        ease: "power1.inOut",
+        scrub: .5,
+      },
+    });
+    gsap.from(".services .services-content h1", 1.3, {
+      y: 50,
+      duration: .5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".services",
+        toggleActions: "play",
+        start: "top 450vh",
+        scroller: "body",
+        end: "+=200",
+        ease: "power1.inOut",
+        scrub: .5,
+      },
+    });
+    gsap.from(".services .services-cards .card", 1.3, {
+      y: 80,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".services-cards .card",
+        toggleActions: "play",
+        start: "top 600",
+        scroller: "body",
+        end: "+=200",
+        ease: "power1.inOut",
+        scrub: .1,
+      },
+    });
+  }, []);
   return (
     <div className="homepage" ref={container}>
       <div className="landingPage">

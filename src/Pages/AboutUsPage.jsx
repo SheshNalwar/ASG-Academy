@@ -1,22 +1,17 @@
-import { useState } from "react";
-import { Footer, Loader } from "../Index";
-
+import { useEffect } from "react";
+import { Footer } from "../Index";
 import "../css/AboutUs.scss";
+
 const AboutUsPage = () => {
-  const [loading, setloading] = useState(true);
-  setTimeout(() => {
-    setloading(false);
-  }, 1000);
-  if (loading) {
-    return <Loader />;
-  }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="aboutUsPage">
         <div className="aboutTitle">
           <h1>About Us</h1>
         </div>
-
         <div className="about-academy">
           <div className="academy-content">
             <h2 className="academy-title">ASG Academy</h2>
@@ -35,7 +30,6 @@ const AboutUsPage = () => {
           </div>
           <img src="Academy.jpg" alt="" />
         </div>
-
         <div className="director-msg">
           <img src="Director.jpg" alt="" />
           <div className="msg">
