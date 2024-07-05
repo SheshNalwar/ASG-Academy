@@ -1,7 +1,7 @@
 :root {
   --primary: #f2f4f6;
-  --accent: #007bff;
-  --active: #007bff;
+  --secondary: #007bff;
+  --accent: #fcf300;
 }
 
 nav {
@@ -72,7 +72,7 @@ nav {
           position: absolute;
           height: 2px;
           border-radius: 1px;
-          background-color: var(--active);
+          background-color: var(--secondary);
           left: 0;
           bottom: 0;
           transition: transform 0.3s ease;
@@ -83,7 +83,7 @@ nav {
         }
 
         .active {
-          color: var(--active);
+          color: var(--secondary);
         }
 
         .active::after {
@@ -165,7 +165,7 @@ nav {
       }
 
       .active {
-        color: var(--accent);
+        color: var(--secondary);
       }
 
       #menuContactBtn {
@@ -188,7 +188,7 @@ nav {
   max-width: 18rem;
   border-radius: 15px;
   overflow: hidden;
-  background-color: var(--accent);
+  background-color: var(--secondary);
   padding-bottom: 1rem;
   transition: all 0.4s;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -254,9 +254,10 @@ nav {
         border: none;
         outline: none;
         width: 6.5rem;
+        font-weight: 500;
         border-radius: 10px;
-        color: rgb(0, 0, 0);
-        background-color: var(--primary);
+        color: rgb(40, 40, 40);
+        background-color: var(--accent);
         padding: 0.6rem 0;
       }
     }
@@ -488,8 +489,8 @@ footer {
   border: none;
   min-width: fit-content;
   border-radius: 10px;
-  background-color: #007bff;
-  color: #f9f9f9;
+  background-color: var(--accent);
+  color: #000000da;
   font-size: 1.1rem;
   font-weight: 600;
 }

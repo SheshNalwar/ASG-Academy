@@ -27,7 +27,7 @@ const CoursesCard = ({
         </div>
         <div className="viewMoreDiv">
           <button className="viewMoreBtn" onClick={scrollToCourse}>
-            View More -&gt;
+            Learn More
           </button>
         </div>
       </div>
