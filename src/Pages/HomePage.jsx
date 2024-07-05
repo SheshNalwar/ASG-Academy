@@ -156,10 +156,10 @@ function HomePage() {
           <p>We provide the best service that comes with the best results.</p>
         </div>
         <div className="teachers-card">
-          <TeacherCard name="ABC" imgsrc="chris.jpg" subject="Physics" />
-          <TeacherCard name="ABC" imgsrc="chris.jpg" subject="Chemistry" />
-          <TeacherCard name="ABC" imgsrc="chris.jpg" subject="Maths" />
-          <TeacherCard name="ABC" imgsrc="chris.jpg" subject="Biology" />
+          <TeacherCard name="ABC" imgsrc="teacher.png" subject="Physics" />
+          <TeacherCard name="ABC" imgsrc="teacher.png" subject="Chemistry" />
+          <TeacherCard name="ABC" imgsrc="teacher.png" subject="Maths" />
+          <TeacherCard name="ABC" imgsrc="teacher.png" subject="Biology" />
         </div>
       </div>
 

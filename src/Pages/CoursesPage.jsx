@@ -6,7 +6,7 @@ const CoursesPage = () => {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
-  }, 1000);
+  }, 1500);
   if (loading) {
     return <Loader />;
   }
