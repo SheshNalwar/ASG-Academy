@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import { ContactUsBtn, NavLinks } from "../Index.js";
-import "../css/Components.scss";
-
 import icons from "/Icons.svg";
 const Footer = () => {
   return (

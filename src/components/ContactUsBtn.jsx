@@ -1,4 +1,3 @@
-import "../css/Components.scss";
 const ContactUsBtn = ({ btnId }) => {
   return (
     <button className="contactUsBtn"

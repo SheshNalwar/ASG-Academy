@@ -1,4 +1,3 @@
-import "../../css/Components.scss";
 const CoursesCard = ({
   imagesrc,
   title,

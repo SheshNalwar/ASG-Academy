@@ -1,5 +1,4 @@
 import { CourseStats } from "../../Index";
-import "../../css/Components.scss";
 import icons from "/Icons.svg";
 
 function CourseSection({ courseData }) {
